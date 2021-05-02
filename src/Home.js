@@ -16,7 +16,7 @@ function Home() {
       <Skills />
       <Projects />
       <Experience />
-      <section id="contact">
+      <section id="contact-me">
       <dl class="alt">
         <dt>Email</dt>
         <dd><a href="mailto:nalam003@citymail.cuny.edu">Email Me</a></dd>
