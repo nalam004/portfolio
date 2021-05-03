@@ -1,25 +1,58 @@
-.about-section{
+.about-section {
   background-color: lavender;
   background-size: 55%;
   overflow: hidden;
   padding: 50px 0;
 }
 
-.about-container{
+.about-container {
   width: 55%;
   float: right;
   background-color: #fdfdfd;
   padding: 50px;
 }
 
-.about-container h1{
+.about-container h1 {
   margin-bottom: 30px;
   font-size: 30px;
   font-weight: 900;
   color: #444440;
 }
 
-.text{
+.animated {
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+     opacity: 0;
+     -webkit-transform: translateX(20px);
+  }
+  100% {
+     opacity: 1;
+     -webkit-transform: translateX(0);
+  }
+}
+@keyframes fadeInRight {
+  0% {
+     opacity: 0;
+     transform: translateX(20px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateX(0);
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+.text {
   font-size: 13px;
   color: #444440;
   line-height: 30px;
@@ -35,6 +68,17 @@
 .personality-types > img {
   width: 50px;
   height: 50px;
+}
+
+.profile-pic:hover { 
+    animation: profile-pic 1s infinite;
+    animation-timing-function: linear;   
+}
+  
+@keyframes profile-pic {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
 }
 
 @media screen and (max-width:1200px){

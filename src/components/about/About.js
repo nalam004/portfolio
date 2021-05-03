@@ -9,7 +9,7 @@ function About() {
     return (
     <>
       <section className='about-section'>
-        <div className='about-container'>
+        <div id='animated-example' class='animated fadeInRight about-container'>
           <img
             width={80}
             height={80}
