@@ -24,7 +24,7 @@ function Home() {
         <dd><a href="https://www.linkedin.com/in/niharika-alam-7ab76b1bb/">Add me on Linkedin</a></dd>
       </dl>
     </section>
-    <p class="copyright">&copy; 2020 Niharika Alam. All Rights Reserved</p>
+    <p class="copyright">&copy; 2020 Niharika All Rights Reserved</p>
     </>
   );
 }
