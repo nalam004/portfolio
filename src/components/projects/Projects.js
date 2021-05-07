@@ -1,20 +1,21 @@
 import React from 'react'
+import "./Projects.css"
 
 
 function Projects() {  
     return (
     <>
         <section className='project-section'>
-            <div class="project-header">
+            <div className="project-header">
                 <h1>Projects</h1>  
             </div>
             
-            <div class="project-container">
-                <div class="row feature-item">
-                    <div class="col-lg-6 wow fadeInUp">
-                        <img src="img/hive.png" class="img-fluid" alt="" />
+            <div className="project-container">
+                <div className="row feature-item">
+                    <div className="col-lg-6 wow fadeInUp">
+                        <img src="img/hive.png" className="img-fluid" alt="" />
                     </div>
-                <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
+                <div className="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
                     <h4>The Hive</h4>
                     <p>
                     The Hive is a multi-user system built for anyone in search of joining or
@@ -22,17 +23,17 @@ function Projects() {
                     by a web interface that connects users from across the world that share
                     similar interests and inspire others with the projects already created.
                     <a href="https://github.com/nalam004/The-Hive" 
-                    class="button">Learn more</a>
+                    className="button">Learn more</a>
                     </p>
                     
                 </div>
                 </div>
 
-                <div class="row feature-item mt-5 pt-5">
-                    <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
-                        <img src="img/vestigia.png" class="img-fluid" alt="" />
+                <div className="row feature-item mt-5 pt-5">
+                    <div className="col-lg-6 wow fadeInUp order-1 order-lg-2">
+                        <img src="img/vestigia.png" className="img-fluid" alt="" />
                     </div>
-                    <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
+                    <div className="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
                         <h4>Vestigia</h4>
                         <p>
                         Vestigia is a social media platform that helps keep track of a user's application
@@ -40,7 +41,7 @@ function Projects() {
                         of these jobs with other users. This simultaneously helps users discover new
                         job opportunities that their friends share.
                         <a href="https://github.com/nalam004/Vestigia" 
-                            class="button">Learn more</a>
+                            className="button">Learn more</a>
                         </p>
                     </div> 
                 </div>
