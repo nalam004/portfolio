@@ -4,9 +4,9 @@ import './Experience.css'
 function Experience() {  
     return (
     <>
-            <main className="experience-container">
+            <section className="experience-container">
                 <h2 className="exp-heading">Work Experience</h2>        
-                <section className="job">
+                <div className="job">
                     <h3 className="work-heading">
                         <span className="work-title">DOE Tech Support Intern </span>&#8211; 
                         <span className="work-location"> Research Foundation of CUNY</span>
@@ -18,9 +18,9 @@ function Experience() {
                         <li className="detail-item">Configuring wireless devices to access the DOE network onsite.</li>
                         <li className="detail-item">Troubleshooting hardware and software problems.</li>
                     </ul>
-                </section>
+                </div>
 
-                <section className="job">
+                <div className="job">
                     <h3 className="work-heading">
                         <span className="work-title">Product Design Intern </span>&#8211; 
                         <span className="work-location"> SYEP Summer Bridge Program</span>
@@ -30,9 +30,9 @@ function Experience() {
                         <li className="detail-item">Designed a logo for products using Adobe Photoshop.</li>
                         <li className="detail-item">Built a website to sell products.</li>
                     </ul>
-                </section>
+                </div>
 
-                <section className="job">
+                <div className="job">
                     <h3 className="work-heading">            
                         <span className="work-title">Wintern </span>&#8211; 
                         <span className="work-location"> Simons Foundation</span>
@@ -44,8 +44,8 @@ function Experience() {
                         <li className="detail-item">Participated in meetings with web developers and executives.</li>
                         <li className="detail-item">Participated in graphic design workshops at Fjord Design studio and Accenture Liquid Studio.</li>
                     </ul>
-                </section>
-            </main>
+                </div>
+            </section>
     </>
   )
 }
