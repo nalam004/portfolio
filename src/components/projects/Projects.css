@@ -1,10 +1,29 @@
-.project-container {
-  grid-gap:1rem;
-  padding: 1rem 80px;
+#projects {
+  background-color: #F5F5F5;
+  background-size: 55%;
+  padding: 50px 0;
 }
 
 .project-heading {
-  position: relative;
-  margin: 2em 0 0;
+  text-align: center;
   color: #444440;
+  padding: 1rem;
+  position: relative;
+}
+  
+.project-heading:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background-color: lavender;
+  border-radius: 2px;
+}
+  
+.project-container {
+  justify-content:center;
+  padding: 1rem 80px;
 }
