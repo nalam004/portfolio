@@ -1,54 +1,90 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Tabs, Tab, makeStyles } from "@material-ui/core";
 import Hive from '../../images/hive.png'
 import Vestigia from '../../images/vestigia.png'
 import Flicks from '../../images/flicks.gif'
 import Photoshare from '../../images/photoshare.gif'
 import lifelyhood from '../../images/lifelyhood.gif'
+import SwipeableViews from 'react-swipeable-views';
 import './Projects.css'
-import Item from "./Item";
-import Carousel from "react-elastic-carousel";
+import Item from './Item'
 
-const breakPoints = [
-    { width: 1200, itemsToShow: 1 },
-];
+const useStyles = makeStyles(theme => ({
+    indicator: {
+      backgroundColor: "#9dc9ae",
+      height: "5px",
+      top: "45px"
+    },
+    tabsMenue: {
+      height: "10px",
+      marginBottom: "40px",
+      textAlign: "center",
+      color: "#444440"
+    }
+}));
 
 function Projects() {  
+    
+    const classes = useStyles();
+    const [value, setValue] = useState(0);
+
+    const handleChange = (event, newValue) => {
+        console.log('new value', newValue)
+        setValue(newValue);
+    };
+
+    const handleChangeIndex = (index) => {
+        setValue(index);
+    };
+    
     return (
     <>
     <section id="projects">
-        <div className="project-container">
-            <h1 className="project-heading">Projects</h1>
-            <Carousel breakPoints={breakPoints}>
-                <Item 
-                    title="Lifelyhood"
-                    image={lifelyhood}
-                    description="React and Django web app that provides workspaces to keep three essential aspects of your life separate and organized."
-                ></Item>
+        <div className="container">
+            <div className="section-heading">
+                <h1>Projects</h1>
+            </div>
 
-                <Item 
-                    title="Photoshare"
-                    image={Photoshare}
-                    description="Django application with a RESTful API that allows authenticated users to post pictures and comment on other users' posts."
-                ></Item>
+            <div className="tabs-wrapper">
+                <Tabs value={value} fullWidth centered onChange={handleChange}
+                        className={classes.tabsMenue} 
+                        TabIndicatorProps={{ className: classes.indicator }}
+                >
+                    <Tab label="Lifelyhood" />
+                    <Tab label="Vestigia" />
+                    <Tab label="The Hive" />
+                    <Tab label="Photoshare" />
+                    <Tab label="Flicks" />
+                </Tabs>
 
-                <Item 
-                    title="Flicks"
-                    image={Flicks}
-                    description="Next.js and React application that displays box office and top rental DVDs using the movie database API."
-                ></Item>
+                <SwipeableViews index={value} onChangeIndex={handleChangeIndex} enableMouseEvents>
+                    <Item 
+                        image={lifelyhood}
+                        description="React and Django web app that provides workspaces to keep three essential aspects of your life separate and organized."
+                    ></Item>
 
-                <Item 
-                    title="The Hive"
-                    image={Hive}
-                    description="Python and MySQL system that allows users to create groups for the purpose of working on projects together."
-                ></Item>
+                    <Item 
+                        image={Vestigia}
+                        description="Python, Flask, and MySQL web app that keeps track of a user’s job applications."
+                    ></Item>
+                    
+                    <Item 
+                        image={Hive}
+                        description="Python, tkinter, and MySQL system that facilitates active teaming of people with similar interest and skill-set to forge groups for a certain do-good project."
+                    ></Item>
 
-                <Item 
-                    title="Vestigia"
-                    image={Vestigia}
-                    description = "Python, Flask, and MySQL web app that keeps track of a user’s job applications."
-                ></Item>
-            </Carousel>
+                    <Item 
+                        image={Photoshare}
+                        description="Django app with RESTful API that allows users sign in and post, edit, and delete images. Users can also add a comment on a post."
+                    ></Item>
+                    
+                    <Item 
+                        image={Flicks}
+                        description="Next.js app that displays the latest movies and shows from the movie database API."
+                    ></Item>
+
+                </SwipeableViews> 
+            </div>
         </div>
     </section>
     </>

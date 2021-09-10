@@ -13,7 +13,7 @@ function Nav() {
             <nav className='navbar'>
                   <div className='nav-container'>
                             <Link to="Hero" onClick={closeMobileMenu}>
-                                <img className='nav-logo' src={NavLogo} width={25} height={25} alt="NavLogo" />
+                                <img className='nav-logo' src={NavLogo} width={45} alt="NavLogo" />
                             </Link> 
 
                             <div className='menu-icon' onClick={handleClick}>
@@ -39,11 +39,6 @@ function Nav() {
                                 <li className='nav-item'>
                                     <Link to='/experience' className='nav-link' onClick={closeMobileMenu}>
                                     Experience
-                                    </Link>
-                                </li>
-                                <li className='nav-item'>
-                                    <Link to='/contact' className='nav-link' onClick={closeMobileMenu}>
-                                    Contact
                                     </Link>
                                 </li>
                             </ul>    

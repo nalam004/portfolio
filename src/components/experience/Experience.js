@@ -22,6 +22,21 @@ function Experience() {
 
                 <div className="job">
                     <h3 className="work-heading">
+                        <span className="work-title">Lead Web Developer </span>&#8211; 
+                        <span className="work-location"> Mott Haven Community Fridge Network</span>
+                        <small className="work-duration">Jun 2021 - Aug 2021</small></h3>
+                    <ul className="work-details">
+                        <li className="detail-item">Oversee junior web developers and evaluate their performance.</li>
+                        <li className="detail-item">Identify user and system requirements for company website.</li>
+                        <li className="detail-item">Refine website specifications and resolve technical issues.</li>
+                        <li className="detail-item">Consult with designers to decide on UI/UX elements.</li>
+                        <li className="detail-item">Set timelines and tasks to team members.</li>
+                        <li className="detail-item">Create wireframes to decide on layout.</li>
+                    </ul>
+                </div>
+
+                <div className="job">
+                    <h3 className="work-heading">
                         <span className="work-title">Product Design Intern </span>&#8211; 
                         <span className="work-location"> SYEP Summer Bridge Program</span>
                         <small className="work-duration">Jun 2020 - Aug 2020</small></h3>
@@ -34,7 +49,7 @@ function Experience() {
 
                 <div className="job">
                     <h3 className="work-heading">            
-                        <span className="work-title">Wintern </span>&#8211; 
+                        <span className="work-title">Software Engineer Intern </span>&#8211; 
                         <span className="work-location"> Simons Foundation</span>
                         <small className="work-duration">Jan 2018 - Feb 2018</small></h3>
                     <ul className="work-details">
@@ -42,7 +57,6 @@ function Experience() {
                         <li className="detail-item">Shadowed IT department, data engineers, and software engineers.</li>
                         <li className="detail-item">Networked with math and science researchers at the Flatiron Institute.</li>
                         <li className="detail-item">Participated in meetings with web developers and executives.</li>
-                        <li className="detail-item">Participated in graphic design workshops at Fjord Design studio and Accenture Liquid Studio.</li>
                     </ul>
                 </div>
             </section>

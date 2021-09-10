@@ -1,15 +1,16 @@
 import React from 'react'
 import './About.css';
 import profile from '../../images/profile.png'
-import infp from '../../images/infp.png'
-import pisces from '../../images/pisces.png'
-import slytherin from '../../images/slytherin.png'
 
 function About() {  
     return (
     <>
-      <section className='about-section'>
-        <div id='animated-example' class='animated fadeInRight about-container'>
+      <section id='about'>
+        <div className='container'>
+          <div className="section-heading">
+            <h1>About Me</h1>
+          </div>
+          
           <img
             width={80}
             height={80}
@@ -17,7 +18,6 @@ function About() {
             src={profile}
             alt='profile'
           />
-          <h1>About Me</h1>
           <p className='text'>
             Hello, my name is Niharika Alam and I like coding and cats! 
             When I am not writing code or creating graphics on my free time, 
@@ -28,11 +28,7 @@ function About() {
             that will contribute to helping the environment. I also enjoy reading and 
             writing short stories often.
           </p>
-          <div className='personality-types'>
-            <img className='icon' src={pisces} alt='pisces' />
-            <img className='icon' src={infp} alt='infp' />
-            <img className='icon' src={slytherin} alt='ravenclaw' />
-          </div>
+          <button className='btn'>Resume</button>
         </div>
       </section>
     </>

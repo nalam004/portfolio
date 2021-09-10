@@ -5,15 +5,9 @@ import HTML5 from '../../images/html.svg'
 function Skills() {  
     return (
     <>
-        <section className='skill-section'>
-            <div class="skills-header">
-                <h1>Skills</h1>  
-                <p>Here are some of the programming languages,
-                    frameworks, and technologies that I'm familiar with!
-                </p>
-            </div>
-            
-            <div class="skills-container">
+        <section id='skills' className='green'>
+
+            <div className="skills-container">
                 
                 <div class="skills-box">
                     <div class="skills-title">

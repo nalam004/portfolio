@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css';
+import logo from './images/logo.svg'
 import Nav from './components/nav/Nav';
-import Hero from './components/hero/Hero';
 import About from './components/about/About';
 import Skills from './components/skills/Skills';
 import Projects from './components/projects/Projects';
@@ -12,7 +12,11 @@ function Home() {
   return (
     <>
       <Nav />
-      <Hero />
+      
+      <div className='hero-container'>
+            <img className='logo' src={logo} alt='logo'/>
+      </div>
+      
       <About />  
       <Skills />
       <Projects />

@@ -1,61 +1,75 @@
 import styled from "styled-components";
 import React from 'react'
 
-export const Card = styled.div`
-  width: 450px;
-  height: 250px;
-  background-color: white;
-  box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
-  border-radius: 6px;
-  overflow: hidden;
-  position: relative;
-  margin: 1.5rem;
+export const TabPane = styled.div`
+positon: relative;  
 `;
 
-export const Demo = styled.div`
-  position: absolute;
-  width: 130px;
-  height: 100%;
-  transition: width 0.4s;
-  overflow: hidden;
-  z-index: 2;
-
-  &:hover {
-    width: 100%;
-    border-radius: 0 5px 5px 0;
-  }
+export const TabInfo = styled.div`
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+-webkit-justify-content: center;
+-ms-flex-pack: center; 
+justify-content: center;
+-webkit-box-align: center;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
 `;
 
-export const CardInfo = styled.div`
-  width: 310px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-  box-sizing: border-box;
-  padding: 1rem;
-  padding-top: 0;
+export const TabImg = styled.img`
+width: 60%;
+max-width: 100%;
+margin-bottom: auto;
 `;
 
-export const Img = styled.img`
-  width: 450px;
-  height: 250px;
+export const TabText = styled.div`
+position: static;
+left: 0%;
+top: 0%;
+right: auto;
+bottom: auto;
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+margin-top: 0%;
+margin-bottom: auto;
+padding-left: 15px;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-webkit-flex-direction: column;
+-ms-flex-direction: column;
+flex-direction: column;
+-webkit-box-align: start;
+-webkit-align-items-flex: start;
+-ms-flex-align: start;
+align-items: flex-start;
 `;
 
-const Item = ({ title, image, description }) => {
+export const TabPara = styled.p`
+margin-top: auto;
+margin-bottom: auto;
+padding-bottom: 15px;
+color: #444440;
+text-align: justify;
+`;
+
+const Item = ({ image, description }) => {
   return (
     <>
-      <Card>
-        <Demo>
-          <Img src={image} alt=''/>
-        </Demo>
-        <CardInfo>
-          <h1>{title}</h1>
-          <p>{description}</p>
-          <span>Hover over me for demo</span>
-        </CardInfo>
-      </Card>
+      <TabPane>
+        <TabInfo>
+          <TabImg src={image} alt=''/>
+          <TabText>
+            <TabPara>{description}</TabPara>
+            <button className='btn'>Learn More</button>
+          </TabText>
+        </TabInfo>
+      </TabPane>
     </>
   );
 };
