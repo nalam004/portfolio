@@ -1,6 +1,5 @@
 import React from 'react'
 import './About.css';
-import profile from '../../images/profile.png'
 
 function About() {  
     return (
@@ -10,14 +9,7 @@ function About() {
           <div className="section-heading">
             <h1>About Me</h1>
           </div>
-          
-          <img
-            width={80}
-            height={80}
-            className='profile-pic'
-            src={profile}
-            alt='profile'
-          />
+        
           <p className='text'>
             Hello, my name is Niharika Alam and I like coding and cats! 
             When I am not writing code or creating graphics on my free time, 

@@ -1,6 +1,5 @@
 import React from 'react'
 import './Skills.css';
-import HTML5 from '../../images/html.svg'
 
 function Skills() {  
     return (
@@ -12,7 +11,7 @@ function Skills() {
                 <div class="skills-box">
                     <div class="skills-title">
                         <div class="skills-img">
-                            <img src={HTML5} alt="" class="skills-icons" />
+                            <img src="https://img.icons8.com/dusk/256/000000/css3.png" alt="" class="skills-icons" />
                         </div>
                         <h3>HTML5</h3>
                     </div>

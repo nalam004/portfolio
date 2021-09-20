@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { Tabs, Tab, makeStyles } from "@material-ui/core";
 import Hive from '../../images/hive.png'
 import Vestigia from '../../images/vestigia.png'
-import Flicks from '../../images/flicks.gif'
 import Photoshare from '../../images/photoshare.gif'
 import lifelyhood from '../../images/lifelyhood.gif'
 import SwipeableViews from 'react-swipeable-views';
@@ -11,7 +10,7 @@ import Item from './Item'
 
 const useStyles = makeStyles(theme => ({
     indicator: {
-      backgroundColor: "#9dc9ae",
+      backgroundColor: "#90AC8E",
       height: "5px",
       top: "45px"
     },
@@ -54,7 +53,6 @@ function Projects() {
                     <Tab label="Vestigia" />
                     <Tab label="The Hive" />
                     <Tab label="Photoshare" />
-                    <Tab label="Flicks" />
                 </Tabs>
 
                 <SwipeableViews index={value} onChangeIndex={handleChangeIndex} enableMouseEvents>
@@ -76,11 +74,6 @@ function Projects() {
                     <Item 
                         image={Photoshare}
                         description="Django app with RESTful API that allows users sign in and post, edit, and delete images. Users can also add a comment on a post."
-                    ></Item>
-                    
-                    <Item 
-                        image={Flicks}
-                        description="Next.js app that displays the latest movies and shows from the movie database API."
                     ></Item>
 
                 </SwipeableViews> 

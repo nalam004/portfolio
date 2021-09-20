@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import logo from './images/logo.svg'
+import hero from './images/hero.svg'
 import Nav from './components/nav/Nav';
 import About from './components/about/About';
 import Skills from './components/skills/Skills';
@@ -13,10 +13,12 @@ function Home() {
     <>
       <Nav />
       
-      <div className='hero-container'>
-            <img className='logo' src={logo} alt='logo'/>
-      </div>
-      
+      <main class="hero">
+        <div class="hero-container">
+            <div> <img src={hero} alt="" class="hero-img" /> </div>
+        </div>
+      </main>
+          
       <About />  
       <Skills />
       <Projects />

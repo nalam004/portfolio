@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import './Nav.css';
 import { Link } from 'react-scroll'
-import NavLogo from '../../images/nav_logo.png'
 
 function Nav() {
     const [click, setClick] = useState(false);
@@ -12,10 +11,7 @@ function Nav() {
     <>
             <nav className='navbar'>
                   <div className='nav-container'>
-                            <Link to="Hero" onClick={closeMobileMenu}>
-                                <img className='nav-logo' src={NavLogo} width={45} alt="NavLogo" />
-                            </Link> 
-
+                            
                             <div className='menu-icon' onClick={handleClick}>
                                 <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                             </div>

@@ -6,14 +6,3 @@
   text-align: justify;
   margin-bottom: 40px;
 }
-
-.profile-pic:hover { 
-    animation: profile-pic 1s infinite;
-    animation-timing-function: linear;   
-}
-  
-@keyframes profile-pic {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
-}
