@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import './Nav.css';
-import { Link } from 'react-scroll'
+import './Nav.css'; 
 
 function Nav() {
     const [click, setClick] = useState(false);
@@ -17,25 +16,17 @@ function Nav() {
                             </div>
                             
                             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                                <li className='nav-item'>
-                                    <Link to='About' className='nav-link' onClick={closeMobileMenu}>
-                                    About
-                                    </Link>
+                                <li className='nav-item'>   
+                                    <a className='nav-link' onClick={closeMobileMenu} href="#about">About</a>
                                 </li>
                                 <li className='nav-item'>
-                                    <Link to='/skills' className='nav-link' onClick={closeMobileMenu}>
-                                    Skills
-                                    </Link>
+                                    <a className='nav-link' onClick={closeMobileMenu} href="#skills">Skills</a>    
                                 </li> 
                                 <li className='nav-item'>
-                                    <Link to='/projects' className='nav-link' onClick={closeMobileMenu}>
-                                    Projects
-                                    </Link>
+                                    <a className='nav-link' onClick={closeMobileMenu} href="#projects">Projects</a>
                                 </li>
                                 <li className='nav-item'>
-                                    <Link to='/experience' className='nav-link' onClick={closeMobileMenu}>
-                                    Experience
-                                    </Link>
+                                    <a className='nav-link' onClick={closeMobileMenu} href="#experience">Experience</a>
                                 </li>
                             </ul>    
                         </div>

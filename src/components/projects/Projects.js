@@ -58,21 +58,25 @@ function Projects() {
                 <SwipeableViews index={value} onChangeIndex={handleChangeIndex} enableMouseEvents>
                     <Item 
                         image={lifelyhood}
+                        link='https://lifelyhood.herokuapp.com/'
                         description="React and Django web app that provides workspaces to keep three essential aspects of your life separate and organized."
                     ></Item>
 
                     <Item 
                         image={Vestigia}
+                        link='https://github.com/sqiu001/Vestigia'
                         description="Python, Flask, and MySQL web app that keeps track of a user’s job applications."
                     ></Item>
                     
                     <Item 
                         image={Hive}
+                        link='https://github.com/mgmayagu/The-Hive'
                         description="Python, tkinter, and MySQL system that facilitates active teaming of people with similar interest and skill-set to forge groups for a certain do-good project."
                     ></Item>
 
                     <Item 
                         image={Photoshare}
+                        link='https://github.com/nalam004?tab=repositories'
                         description="Django app with RESTful API that allows users sign in and post, edit, and delete images. Users can also add a comment on a post."
                     ></Item>
 

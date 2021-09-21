@@ -56,9 +56,10 @@ margin-bottom: auto;
 padding-bottom: 15px;
 color: #444440;
 text-align: justify;
+line-height: 25px;
 `;
 
-const Item = ({ image, description }) => {
+const Item = ({ image, link, description }) => {
   return (
     <>
       <TabPane>
@@ -66,7 +67,7 @@ const Item = ({ image, description }) => {
           <TabImg src={image} alt=''/>
           <TabText>
             <TabPara>{description}</TabPara>
-            <button className='btn'>Learn More</button>
+            <a target="_blank" href={link} className="btn">Learn More</a>
           </TabText>
         </TabInfo>
       </TabPane>

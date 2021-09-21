@@ -11,92 +11,74 @@ function Skills() {
                 <div class="skills-box">
                     <div class="skills-title">
                         <div class="skills-img">
-                            <img src="https://img.icons8.com/dusk/256/000000/css3.png" alt="" class="skills-icons" />
+                            <img src="https://img.icons8.com/wired/512/F7F4E6/html-5.png" alt="" class="skills-icons" />
                         </div>
-                        <h3>HTML5</h3>
-                    </div>
-                </div>
-                
-                <div class="skills-box">
-                    <div class="skills-title">
-                        <div class="skills-img">
-                            <img src="https://img.icons8.com/dusk/256/000000/css3.png" alt="" class="skills-icons" />
-                        </div>
-                        <h3>CSS3</h3>
+                        <h4>HTML5/CSS3</h4>
                     </div>
                 </div>
 
                 <div class="skills-box">
                     <div class="skills-title">
                         <div class="skills-img">
-                            <img src="https://img.icons8.com/dusk/256/000000/javascript-logo.png" alt="" class="skills-icons" />
+                            <img src="https://img.icons8.com/wired/512/F7F4E6/javascript-logo.png" alt="" class="skills-icons" />
                         </div>
-                        <h3>JavaScript</h3>
+                        <h4>JavaScript</h4>
                     </div>
                 </div>
 
                 <div class="skills-box">
                     <div class="skills-title">
                         <div class="skills-img">
-                            <img src="https://img.icons8.com/dusk/256/000000/java-coffee-cup-logo.png" alt="" class="skills-icons" />
+                            <img src="https://img.icons8.com/wired/512/F7F4E6/java-coffee-cup-logo.png" alt="" class="skills-icons" />
                         </div>
-                        <h3>Java</h3>
+                        <h4>Java</h4>
                     </div>
                 </div>
 
                 <div class="skills-box">
                     <div class="skills-title">
                         <div class="skills-img">
-                            <img src="https://img.icons8.com/dusk/64/000000/python.png" alt="" class="skills-icons" />
+                            <img src="https://img.icons8.com/wired/512/F7F4E6/python.png" alt="" class="skills-icons" />
                         </div>
-                        <h3>Python</h3>
+                        <h4>Python</h4>
                     </div>
                 </div>
 
                 <div class="skills-box">
                     <div class="skills-title">
                         <div class="skills-img">
-                            <img src="https://img.icons8.com/dusk/256/000000/react.png" alt="" class="skills-icons" />
+                            <img src="https://img.icons8.com/wired/512/F7F4E6/react.png" alt="" class="skills-icons" />
                         </div>
-                        <h3>ReactJS</h3>
+                        <h4>ReactJS</h4>
                     </div>
                 </div>
 
                 <div class="skills-box">
                     <div class="skills-title">
                         <div class="skills-img">
-                            <img src="https://img.icons8.com/dusk/256/000000/adobe-illustrator.png" alt="" class="skills-icons" />
+                            <img src="https://img.icons8.com/wired/512/F7F4E6/sql.png" alt="" class="skills-icons" />
                         </div>
-                        <h3>Illustrator</h3>
+                        <h4>MySQL</h4>
                     </div>
                 </div>
 
                 <div class="skills-box">
                     <div class="skills-title">
                         <div class="skills-img">
-                            <img src="https://img.icons8.com/dusk/256/000000/database-import.png" alt="" class="skills-icons" />
+                            <img src="https://img.icons8.com/wired/512/F7F4E6/adobe-photoshop.png" alt="" class="skills-icons" />
                         </div>
-                        <h3>MySQL</h3>
+                        <h4>Photoshop</h4>
                     </div>
                 </div>
 
                 <div class="skills-box">
                     <div class="skills-title">
                         <div class="skills-img">
-                            <img src="https://img.icons8.com/dusk/256/000000/adobe-photoshop.png" alt="" class="skills-icons" />
-                        </div>
-                        <h3>Photoshop</h3>
-                    </div>
-                </div>
-
-                <div class="skills-box">
-                    <div class="skills-title">
-                        <div class="skills-img">
-                            <img src="https://img.icons8.com/dusk/256/000000/visual-studio-code-2019.png" 
+                            <img src="https://img.icons8.com/wired/64/F7F4E6/visual-studio-code-2019--v2.png" 
                                 alt="" 
                                 class="skills-icons" /> 
                         </div>
-                        <h3>Visual Studio</h3>
+                        <h4>Visual Studio</h4>
                     </div>
                 </div>
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import './About.css';
+import Resume from './Niharika Alam Resume.pdf'
 
 function About() {  
     return (
@@ -20,7 +21,7 @@ function About() {
             that will contribute to helping the environment. I also enjoy reading and 
             writing short stories often.
           </p>
-          <button className='btn'>Resume</button>
+          <a href={Resume} className='btn' download>Resume</a>
         </div>
       </section>
     </>
