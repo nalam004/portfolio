@@ -4,6 +4,7 @@ import Hive from '../../images/hive.png'
 import Vestigia from '../../images/vestigia.png'
 import Photoshare from '../../images/photoshare.gif'
 import lifelyhood from '../../images/lifelyhood.gif'
+import portfolio from '../../images/portfolio.png'
 import SwipeableViews from 'react-swipeable-views';
 import './Projects.css'
 import Item from './Item'
@@ -49,6 +50,7 @@ function Projects() {
                         className={classes.tabsMenue} 
                         TabIndicatorProps={{ className: classes.indicator }}
                 >
+                    <Tab label="Portfolio" />
                     <Tab label="Lifelyhood" />
                     <Tab label="Vestigia" />
                     <Tab label="The Hive" />
@@ -57,9 +59,16 @@ function Projects() {
 
                 <SwipeableViews index={value} onChangeIndex={handleChangeIndex} enableMouseEvents>
                     <Item 
+                        image={portfolio}
+                        link='https://github.com/nalam004/portfolio'
+                        description="React web app that showcases my work and passion!."
+                    ></Item>
+
+                    <Item 
                         image={lifelyhood}
                         link='https://lifelyhood.herokuapp.com/'
-                        description="React and Django web app that provides workspaces to keep three essential aspects of your life separate and organized."
+                        description="React and Django web app that provides workspaces to keep three essential aspects of your life separate and organized.
+                                    My role was the frontend developer and UX/UI designer. I created the overall user interface for the product."
                     ></Item>
 
                     <Item 
@@ -71,7 +80,9 @@ function Projects() {
                     <Item 
                         image={Hive}
                         link='https://github.com/mgmayagu/The-Hive'
-                        description="Python, tkinter, and MySQL system that facilitates active teaming of people with similar interest and skill-set to forge groups for a certain do-good project."
+                        description="Python, tkinter, and MySQL system that facilitates active teaming of people with similar interest and skill-set to forge groups for a certain do-good project.
+                                    There are 4 types of users: visitors who just surf around, ordinary users (OU) who are approved by SU and need login, VIP users whose reputation scores exceed a threshold set by SU, and 
+                                    super-user (SU) who initializes the system. My role was backend and frontend developer for login, registration, invitation, and friends list pages."
                     ></Item>
 
                     <Item 

@@ -67,7 +67,7 @@ const Item = ({ image, link, description }) => {
           <TabImg src={image} alt=''/>
           <TabText>
             <TabPara>{description}</TabPara>
-            <a target="_blank" href={link} className="btn">Learn More</a>
+            <a target="_blank" rel="noreferrer" href={link} className="btn">Learn More</a>
           </TabText>
         </TabInfo>
       </TabPane>
