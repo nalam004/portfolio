@@ -18,12 +18,22 @@ justify-content: center;
 -webkit-align-items: center;
 -ms-flex-align: center;
 align-items: center;
+
+@media (max-width: 900px) {
+  display: block;
+}
+
 `;
 
 export const TabImg = styled.img`
 width: 60%;
 max-width: 100%;
 margin-bottom: auto;
+
+@media (max-width: 900px) {
+  width: 100%;
+}
+
 `;
 
 export const TabText = styled.div`
@@ -48,6 +58,11 @@ flex-direction: column;
 -webkit-align-items-flex: start;
 -ms-flex-align: start;
 align-items: flex-start;
+
+@media (max-width: 900px) {
+  padding: 10px 0px 5px 0px;
+}
+
 `;
 
 export const TabPara = styled.p`
