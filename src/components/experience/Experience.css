@@ -16,7 +16,7 @@
   background: #90AC8E;
   transition: all .10s linear 0s;
   box-shadow: 10px 10px #444440;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 1em;
   text-align: left;
 }
@@ -28,7 +28,7 @@
 }
 
 .timeline-content-info {
-  color: #F5CC7C;
+  color: rgb(247, 244, 230, 0.6);
   font-size: 16px;
 }
 
@@ -59,7 +59,7 @@
 .timeline-content p {
   color: #444440;
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 28px;
 }
 
 @media only screen and (min-width: 1170px) {

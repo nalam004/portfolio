@@ -17,6 +17,12 @@ section {
   background-color: #F7F4E6;
 }
 
+@media only screen and (max-width: 500px) {
+  section {
+    padding: 3rem 2rem;
+  }
+}
+
 .green {
   background-color: #90AC8E;
 }
@@ -33,14 +39,14 @@ section {
 }
 
 .section-heading h1 {
-  color: #F5CC7C;
+  color: #E7AF8E;
   letter-spacing: 5px;
   text-transform: uppercase;
 }
 
 .btn {
   padding: 12px 30px;
-  border-radius: 10px;
+  border-radius: 20px;
   border-color: #90AC8E;
   border-style: solid;
   border-width: 1.5px;

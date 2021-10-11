@@ -29,6 +29,7 @@ export const TabImg = styled.img`
 width: 60%;
 max-width: 100%;
 margin-bottom: auto;
+border-radius: 5px;
 
 @media (max-width: 900px) {
   width: 100%;
@@ -66,12 +67,13 @@ align-items: flex-start;
 `;
 
 export const TabPara = styled.p`
+font-size: 20px;
 margin-top: auto;
 margin-bottom: auto;
 padding-bottom: 15px;
 color: #444440;
 text-align: justify;
-line-height: 25px;
+line-height: 30px;
 `;
 
 const Item = ({ image, link, description }) => {

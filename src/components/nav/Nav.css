@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
+    font-size: 16px;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -71,14 +71,14 @@
     .nav-menu.active {
       background: #90AC8E;
       border-radius: 10px;
-      border: solid 2px #F5CC7C;
+      border: solid 2px #E7AF8E;
       right: 0;
       transition: all 0.5s ease;
       z-index: 1;
     }
   
     .nav-link {
-      text-align: center;
+      text-align: left;
       padding: 20px;
       width: 100%;
       display: table;

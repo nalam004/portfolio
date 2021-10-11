@@ -17,6 +17,9 @@ const useStyles = makeStyles(theme => ({
       marginBottom: "40px",
       textAlign: "center",
       color: "#444440"
+    }, 
+    tabs: {
+        fontSize: '16px'
     }
 }));
 
@@ -56,14 +59,13 @@ function Projects() {
                     <Item 
                         image={portfolio}
                         link='https://github.com/nalam004/portfolio'
-                        description="React web app that showcases my work and passion!."
+                        description="React web app that showcases my work and passion!"
                     ></Item>
 
                     <Item 
                         image={lifelyhood}
                         link='https://lifelyhood.herokuapp.com/'
-                        description="React and Django web app that provides workspaces to keep three essential aspects of your life separate and organized.
-                                    My role was the frontend developer and UX/UI designer. I created the overall user interface for the product."
+                        description="React and Django web app that provides workspaces to keep three essential aspects of your life separate and organized."
                     ></Item>
                     
                     <Item 
