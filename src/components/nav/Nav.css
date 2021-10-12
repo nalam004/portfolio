@@ -1,5 +1,8 @@
 .navbar {
-  background-color: #F7F4E6;
+    background-color: #F7F4E6;
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+  -moz-box-shadow: 0 4px 6px -6px #222;
+  box-shadow: 0 4px 6px -6px #222;
     height: 50px;
     display: flex;
     justify-content: center;
