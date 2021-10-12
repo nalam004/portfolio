@@ -5,8 +5,25 @@
   font-family: 'Josefin Sans', sans-serif;
 }
 
+::-webkit-scrollbar{
+  width: 5px;
+}
+
+::-webkit-scrollbar-track{
+  background: transparent;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #E7AF8E;
+  border-radius: 10px;
+}
+
 html {
   scroll-behavior: smooth;
+  overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: overlay;
 }
 
 section {
@@ -46,6 +63,7 @@ section {
 
 .btn {
   padding: 12px 30px;
+  transition: all .05s linear 0s;
   border-radius: 20px;
   border-color: #90AC8E;
   border-style: solid;
@@ -56,11 +74,15 @@ section {
   text-transform: uppercase;
   cursor: pointer;
   text-decoration: none;
+  box-shadow: 5px 5px #444440;
 }
 
 .btn:hover {
   background-color: #90AC8E;
   color: #F7F4E6;
+  box-shadow: none;
+  transform: translateX(5px);
+  transform: translateY(5px);
 }
 
 .hero-container{

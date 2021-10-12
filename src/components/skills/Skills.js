@@ -29,15 +29,6 @@ function Skills() {
                 <div class="skills-box">
                     <div class="skills-title">
                         <div class="skills-img">
-                            <img src="https://img.icons8.com/wired/512/F7F4E6/java-coffee-cup-logo.png" alt="" class="skills-icons" />
-                        </div>
-                        <h4>Java</h4>
-                    </div>
-                </div>
-
-                <div class="skills-box">
-                    <div class="skills-title">
-                        <div class="skills-img">
                             <img src="https://img.icons8.com/wired/512/F7F4E6/python.png" alt="" class="skills-icons" />
                         </div>
                         <h4>Python</h4>
@@ -56,25 +47,36 @@ function Skills() {
                 <div class="skills-box">
                     <div class="skills-title">
                         <div class="skills-img">
-                            <img src="https://img.icons8.com/wired/512/F7F4E6/sql.png" alt="" class="skills-icons" />
-                        </div>
-                        <h4>MySQL</h4>
-                    </div>
-                </div>
-
-                <div class="skills-box">
-                    <div class="skills-title">
-                        <div class="skills-img">
                             <img src="https://img.icons8.com/wired/512/F7F4E6/adobe-photoshop.png" alt="" class="skills-icons" />
                         </div>
-                        <h4>Photoshop</h4>
+                        <h4>Adobe Photoshop</h4>
+                    </div>
+                </div>
+
+                <div class="skills-box">
+                    <div class="skills-title">
+                        <div class="skills-img">    
+                            <img src="https://img.icons8.com/carbon-copy/512/F7F4E6/figma.png" alt="" class="skills-icons"/>
+                        </div>
+                        <h4>Figma</h4>
                     </div>
                 </div>
 
                 <div class="skills-box">
                     <div class="skills-title">
                         <div class="skills-img">
-                            <img src="https://img.icons8.com/wired/64/F7F4E6/visual-studio-code-2019--v2.png" 
+                            <img src="https://img.icons8.com/wired/512/F7F4E6/github.png" 
+                                alt="" 
+                                class="skills-icons" /> 
+                        </div>
+                        <h4>Version Control</h4>
+                    </div>
+                </div>
+
+                <div class="skills-box">
+                    <div class="skills-title">
+                        <div class="skills-img">
+                            <img src="https://img.icons8.com/wired/512/F7F4E6/visual-studio-code-2019--v2.png" 
                                 alt="" 
                                 class="skills-icons" /> 
                         </div>

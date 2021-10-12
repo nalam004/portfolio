@@ -1,8 +1,6 @@
 .navbar {
     background-color: #F7F4E6;
-    -webkit-box-shadow: 0 4px 6px -6px #222;
-  -moz-box-shadow: 0 4px 6px -6px #222;
-  box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 9px 0px -6px #444440;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -41,12 +39,12 @@
 }
   
 .nav-link:hover {
-    border-bottom: 4px solid #90AC8E;
+    border-bottom: 2px solid #444440;
     transition: all 0.2s ease-out;
 }
   
 .fa-bars {
-    color: #90AC8E;
+    color: #444440;
 }
     
 .menu-icon {
@@ -54,6 +52,10 @@
 }
   
 @media screen and (max-width: 960px) {
+    .navbar {
+      box-shadow: none;
+    }
+
     .NavbarItems {
       position: relative;
     }
@@ -89,7 +91,7 @@
     }
   
     .nav-link:hover {
-      background-color: #F5CC7C;
+      background-color: #E7AF8E;
       color: #444440;
       border-bottom: none;
     }
@@ -105,7 +107,6 @@
     }
   
     .fa-times {
-      color: #F7F4E6;
-      font-size: 1rem;
+      color: #444440;
     }
 }
