@@ -65,7 +65,7 @@
 @media only screen and (min-width: 1170px) {
 
   #timeline::before {
-    top: 5.8rem;
+    top: 2.9rem;
     left: 50%;
     content: '';
     position: absolute;

@@ -34,6 +34,10 @@ section {
   background-color: #F7F4E6;
 }
 
+#experience {
+  padding-top: 0;
+}
+
 @media only screen and (max-width: 500px) {
   section {
     padding: 3rem 2rem;

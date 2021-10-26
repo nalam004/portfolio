@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import { Tabs, Tab, makeStyles } from "@material-ui/core";
 import Hive from '../../images/hive.png'
 import lifelyhood from '../../images/lifelyhood.gif'
-import portfolio from '../../images/portfolio.png'
+import portfolio from '../../images/portfolio.gif'
+import wics from '../../images/wics.gif'
 import SwipeableViews from 'react-swipeable-views';
 import Item from './Item'
 
@@ -51,6 +52,7 @@ function Projects() {
                         TabIndicatorProps={{ className: classes.indicator }}
                 >
                     <Tab className={classes.tabs} label="Portfolio" />
+                    <Tab className={classes.tabs} label="CCNY WiCs" />
                     <Tab className={classes.tabs} label="Lifelyhood" />
                     <Tab className={classes.tabs} label="The Hive" />
                 </Tabs>
@@ -60,6 +62,13 @@ function Projects() {
                         image={portfolio}
                         link='https://github.com/nalam004/portfolio'
                         description="React web app that showcases my work and passion!"
+                    ></Item>
+
+                    <Item 
+                        image={wics}
+                        link='https://ccny-wics.herokuapp.com/'
+                        description="React website for the CCNY Women in Computer Science club that 
+                        features what we're about, upcoming events, and E-Board Members!"
                     ></Item>
 
                     <Item 
