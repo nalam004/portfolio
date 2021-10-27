@@ -62,7 +62,9 @@ section {
 .section-heading h1 {
   color: #E7AF8E;
   letter-spacing: 5px;
+  font-family: 'Rampart One', cursive;
   text-transform: uppercase;
+  font-size: 35px;
 }
 
 .btn {
