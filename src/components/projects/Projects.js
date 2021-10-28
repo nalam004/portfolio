@@ -47,7 +47,7 @@ function Projects() {
             </div>
 
             <div className="tabs-wrapper">
-                <Tabs value={value} fullWidth centered onChange={handleChange}
+                <Tabs value={value} fullwidth="true" centered onChange={handleChange}
                         className={classes.tabsMenue} 
                         TabIndicatorProps={{ className: classes.indicator }}
                 >

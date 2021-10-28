@@ -13,9 +13,9 @@ function Home() {
     <>
       <Nav />
       
-      <main class="hero">
-        <div class="hero-container">
-            <div> <img src={hero} alt="" class="hero-img" /> </div>
+      <main className="hero">
+        <div className="hero-container">
+            <div> <img src={hero} alt="" className="hero-img" /> </div>
         </div>
       </main>
           

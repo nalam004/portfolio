@@ -1,14 +1,33 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Nav.css'; 
 
 function Nav() {
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
+    const [scrollState, setScrollState] = useState("top")
+
+    useEffect(() => {
+        let listener = document.addEventListener("scroll", e => {
+            var scrolled = document.scrollingElement.scrollTop
+            if (scrolled >= 120) {
+                if (scrollState !== "not_top") {
+                    setScrollState("not_top")
+                }
+            } else {
+                if (scrollState !== "top") {
+                    setScrollState("top")
+                }
+            }
+        })
+        return () => {
+            document.removeEventListener("scroll", listener)
+        }
+    }, [scrollState])
  
     return (
     <>
-            <nav className='navbar'>
+            <nav className='navbar' style={{boxShadow: scrollState === "top" ? "none" : "0 9px 0px -6px #444440"}}>
                   <div className='nav-container'>
                             
                             <div className='menu-icon' onClick={handleClick}>

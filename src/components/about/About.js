@@ -1,5 +1,4 @@
 import React from 'react'
-import './About.css';
 import Resume from './Niharika Alam Resume.pdf'
 
 function About() {  

@@ -54,7 +54,7 @@ section {
 }
 
 .section-heading {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   padding-bottom: 20px;
   border-bottom: solid 2px #90AC8E;
 }
@@ -62,7 +62,7 @@ section {
 .section-heading h1 {
   color: #E7AF8E;
   letter-spacing: 5px;
-  font-family: 'Rampart One', cursive;
+  text-shadow: 3px 3px #444440;
   text-transform: uppercase;
   font-size: 35px;
 }
@@ -98,4 +98,13 @@ section {
 
 .hero-img{
   max-width: 100%;
+}
+
+.text {
+  font-size: 20px;
+  font-weight: 200;
+  color: #444440;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
 }
