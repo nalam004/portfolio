@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Tabs, Tab, makeStyles } from "@material-ui/core";
 import Hive from '../../images/hive.png'
 import lifelyhood from '../../images/lifelyhood.gif'
-import portfolio from '../../images/portfolio.gif'
+import uber from '../../images/uber.gif'
 import wics from '../../images/wics.gif'
 import SwipeableViews from 'react-swipeable-views';
 import Item from './Item'
@@ -51,7 +51,7 @@ function Projects() {
                         className={classes.tabsMenue} 
                         TabIndicatorProps={{ className: classes.indicator }}
                 >
-                    <Tab className={classes.tabs} label="Portfolio" />
+                    <Tab className={classes.tabs} label="UberX" />
                     <Tab className={classes.tabs} label="CCNY WiCs" />
                     <Tab className={classes.tabs} label="Lifelyhood" />
                     <Tab className={classes.tabs} label="The Hive" />
@@ -59,9 +59,9 @@ function Projects() {
 
                 <SwipeableViews index={value} onChangeIndex={handleChangeIndex} enableMouseEvents>
                     <Item 
-                        image={portfolio}
-                        link='https://github.com/nalam004/portfolio'
-                        description="React web app that showcases my work and passion!"
+                        image={uber}
+                        link='https://github.com/nalam004/Uber-Clone'
+                        description="Uber Clone with Next JS, React JS, Tailwind CSS and Firebase."
                     ></Item>
 
                     <Item 
