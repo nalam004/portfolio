@@ -4,6 +4,7 @@ import Hive from '../../images/hive.png'
 import lifelyhood from '../../images/lifelyhood.gif'
 import uber from '../../images/uber.gif'
 import wics from '../../images/wics.gif'
+import star from '../../images/starsounds.png'
 import SwipeableViews from 'react-swipeable-views';
 import Item from './Item'
 
@@ -51,6 +52,7 @@ function Projects() {
                         className={classes.tabsMenue} 
                         TabIndicatorProps={{ className: classes.indicator }}
                 >
+                    <Tab className={classes.tabs} label="StarSounds" />
                     <Tab className={classes.tabs} label="UberX" />
                     <Tab className={classes.tabs} label="CCNY WiCs" />
                     <Tab className={classes.tabs} label="Lifelyhood" />
@@ -58,6 +60,12 @@ function Projects() {
                 </Tabs>
 
                 <SwipeableViews index={value} onChangeIndex={handleChangeIndex} enableMouseEvents>
+                    <Item 
+                        image={star}
+                        link='https://star-sounds.herokuapp.com/'
+                        description="UI design of music player built with React, TypeScript, and Tailwind CSS."
+                    ></Item>
+
                     <Item 
                         image={uber}
                         link='https://github.com/nalam004/Uber-Clone'
