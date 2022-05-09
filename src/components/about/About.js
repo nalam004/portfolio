@@ -9,12 +9,12 @@ function About() {
           <div className="section-heading">
             <h1>About Me</h1>
           </div>
-        
-          
+      
             <p className='text'>
-              👋 Hi, my name is Niharika and I like coding and cats! 👩🏻‍🎓 Currently a senior at CCNY 
-              pursuing a Bachelor's in Computer Science and Chief Marketing Officer of the Women 
-              in Computer Science club.
+              👋 Hi, my name is Niharika and I like coding and cats! 
+            </p>
+            <p className='text'>
+              👩🏻‍🎓 Graduated from CCNY with a Bachelor's in Computer Science.
             </p>
             <p className='text'>
               👩‍💻 Bangladeshi-American and New Yorker passionate about front-end development,

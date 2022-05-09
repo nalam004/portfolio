@@ -8,6 +8,21 @@ function Experience() {
 		<div className='container'> 
 			<div className="section-heading"> <h1>Experience</h1> </div>
 			<div id="timeline">
+
+				<div className="timeline-block">
+					<div className="timeline-img"></div>
+					<div className="timeline-content">
+						<h2>Front-end Developer</h2>
+        				<div className="timeline-content-info">
+          					<span className="timeline-title">Savas Labs</span>
+							<span className="timeline-date">Feb 2022 - Present</span>
+        				</div>
+						<p>Build functional and appealing interfaces for web and mobile-based applications
+							using popular CMS frameworks like Drupal or Wordpress. Translating design comps 
+							and wireframes into semantic HTML + CSS code that is consistent across all browsers 
+							and platforms.</p>
+					</div>
+				</div>
 	
 				<div className="timeline-block">
 					<div className="timeline-img"></div>
@@ -15,7 +30,7 @@ function Experience() {
 						<h2>Tech Support Intern</h2>
         				<div className="timeline-content-info">
           					<span className="timeline-title">RF CUNY</span>
-							<span className="timeline-date">Sep 2020 - Present</span>
+							<span className="timeline-date">Sep 2020 - Feb 2022</span>
         				</div>
 						<p>Assist in the setup of new computer equipment and installing software,
 							configure wireless devices to access the DOE network onsite, and
