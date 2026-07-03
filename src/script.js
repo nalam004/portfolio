@@ -20,3 +20,16 @@ menuToggle.addEventListener('click', () => {
 navMenu.querySelectorAll('.nav-link').forEach((link) => {
   link.addEventListener('click', () => setMenuState(false));
 });
+
+const skillList = document.getElementsByClassName("skills-list")[0];
+
+// Appends skills data to skills section
+skills.forEach(skill => {
+  const item = document.createElement("li");
+  const icon = document.createElement("img");
+  icon.src = skill.icon;
+  icon.alt = skill.name;
+  item.innerHTML = skill.name;
+  item.prepend(icon);
+  skillList.append(item);
+});

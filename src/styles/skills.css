@@ -1,95 +1,24 @@
-.skills-container {
-    display: grid;
-    grid-tempLate-columns: repeat(4, 1fr);
-    justify-content:center;
-    align-items:center;
-    text-align: center;
-    grid-gap: 1rem;
+ul.skills-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  color: #2e282a;
+  font-size: 18px;
 }
 
-.skills-box{
-    cursor:pointer;
-}
-    
-.skills-box:hover > .skills-title:after, 
-.skills-box:hover > .skills-title:before{
-    width: 30px;
-}
-
-.skills-box:hover .skills-img{
-    transform: translateX(-20px);
-}
-    
-.skills-title{
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    padding: 1rem;
-    position: relative;
-}
-    
-.skills-title:after{
-    content: '';
-    position:absolute;
-    bottom: 0;
-    right: 50%;
-    width:20px;
-    height:4px;
-    border-radius: 2px 0 0 2px;
-    background-color: #FFD4BA;
-    transition: .5s;
-}
-    
-.skills-title:before{
-    content: '';
-    position:absolute;
-    bottom: 0;
-    left: 50%;
-    width: 50px;
-    height: 4px;
-    border-radius: 0 2px 2px 0;
-    background-color: #FFD4BA;
-}
-    
-.skills-icons{
-    width:50px;
-    z-index:2;
-}
-    
-.skills-img{
-    width:90px;
-    position: relative;
-    border-radius: 45px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    transition: .5s;
-}
-    
-.skills-img:after{
-    content: '';
-    position:absolute;
-    top:0;
-    left: 0;
-    width:50%;
-    height:90px;
-    border-radius: 45px 0 0 45px;
+ul.skills-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
 }
 
-.skills-title h4{
-    font-size: 20px;
-    color: #444440;
-    margin-top: 0.5rem;
-}
- 
-@media screen and (max-width:990px){
-     .skills-container{
-        grid-tempLate-columns: repeat(2, 1fr);
-     }
-}
-    
-@media screen and (max-width:650px) {
-     .skills-container {
-        grid-tempLate-columns:2fr;
-     }
+ul.skills-list li img {
+  width: 35px;
 }

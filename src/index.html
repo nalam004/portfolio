@@ -1,306 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Niharika Alam | Developer Portfolio</title>
-  <meta name="description" content="Portfolio of Niharika Alam,
-  a web developer based in New York specializing in responsive web design and UX/UI." />
-
-  <!-- Font Awesome (used for the hamburger menu icon) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-
-  <link rel="stylesheet" href="styles/base.css" />
-  <link rel="stylesheet" href="styles/experience.css" />
-  <link rel="stylesheet" href="styles/footer.css" />
-  <link rel="stylesheet" href="styles/nav.css" />
-  <link rel="stylesheet" href="styles/skills.css" />
-  <link rel="stylesheet" href="styles/utilities.css" />
-
-  <link rel="icon" type="image/png" href="assets/favicon.ico" />
+  <title>Niharika Alam | Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=yes">
+  <meta charset="utf-8">
+  
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/experience.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/nav.css">
+  <link rel="stylesheet" href="styles/skills.css">
+  <link rel="stylesheet" href="styles/utilities.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <a class="skip-link" href="#main-content">Skip to main content</a>
-
   <header>
-    <nav class="navbar" aria-label="Primary">
-      <div class="nav-container">
-        <button
-          type="button"
-          class="menu-icon"
-          id="menu-toggle"
-          aria-expanded="false"
-          aria-controls="primary-nav-menu"
-          aria-label="Toggle navigation menu"
-        >
-          <i class="fas fa-bars" aria-hidden="true"></i>
-        </button>
-
-        <ul class="nav-menu" id="primary-nav-menu">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#experience">Experience</a>
-          </li>
-        </ul>
-      </div>
+    <nav>
+      <button id="logo">{ Niharika.Alam }</button>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a class="contact-link" href="#contact">Contact</a></li>
+      </ul>
+      <span class="menu-icon">&#9776</span>
     </nav>
+
+    <div class="container">
+      <div class="text-wrap">
+        <h1>Hi, my name is Niharika!</h1>
+        <p>I am frontend developer based in New York with a passion for
+          creating user interfaces and designs that captivate!</p>
+      </div>
+      <img alt="Niharika's Headshot" src="./img/headshot.svg" />
+    </div>
   </header>
 
-  <main class="hero" id="main-content">
-    <div class="hero-container">
-      <div>
-        <img src="assets/hero.svg" alt="" class="hero-img" />
+  <section id="about">
+    <h2>About Me</h2>
+
+    <p>👩🏻‍💻Hi, my name is Niharika and I like coding and cats!</p>
+    <p>👩🏻‍🎓Graduated from the City College of New York with a Bachelor's in Computer Science.</p>
+    <p>🗽Bangladeshi-American and New Yorker passionate about front-end development,
+        responsive web design, and UX/UI design.</p>
+    <p>💕I had the privilege of interning as a software engineer, tech support, and 
+        web developer and have decided that web development, specifically front-end, is where 
+        my heart lies. I enjoy creating user interfaces and designs that captivate!</p>
+    <p>🐼When I am not coding or creating graphics on my free time, 
+        I like to take nature walks and watch videos of animals. Pandas are my favorite!</p>  
+    <p>📚I also enjoy reading and writing short stories.</p>
+
+    <h3>Technologies</h3>
+    <ul class="skills-list"></ul>
+
+    <div class='resume'><a href="./data/Niharika Alam Resume.pdf" download>Resume</a></div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div id="tabs">
+      <div role="tablist" aria-label="projects-tabs">
+        <button id="tab-three" role="tab" aria-selected="true" aria-controls="duke" tabindex="0">Duke Today</button>
+        <button id="tab-four" role="tab" aria-selected="false" aria-controls="taco" tabindex="-1">Tacolocation</button>
+        <button id="tab-one" role="tab" aria-selected="false" aria-controls="lifelyhood" tabindex="-1">Lifelyhood</button>
+        <button id="tab-two" role="tab" aria-selected="false" aria-controls="wics" tabindex="-1">WiCs</button>
       </div>
-      <h1 class="hero-name">Niharika Alam</h1>
-      <p class="hero-tagline">Front-End Developer</p>
+
+      <div id="duke" role="tabpanel" aria-labelledby="tab-three">
+        <img alt="Gif of the Duke Today website" src="./img/duke.gif"/>
+        <div>
+          <h3>Duke Today</h3>
+          <p>
+            A redesign of the flagship news website of Duke University using 
+            Drupal 9 as a CMS and Gutenberg Editor for story pages, combining core blocks with a library 
+            of custom blocks developed specifically for their needs.
+          </p>
+          <ul class="keywords">
+            <li>Frontend</li>
+            <li>Drupal 9</li>
+            <li>Gutenberg Editor</li>
+            <li>HTML/SCSS</li>
+          </ul>
+          <a class="link" href="https://today.duke.edu/" target="_blank">Live Website &nearr;</a>
+        </div>
+      </div>
+      <div id="taco" role="tabpanel" aria-labelledby="tab-four" hidden>
+        <img alt="Gif of the Tacolocation website" src="./img/tacolocation.gif"/>
+        <div>
+          <h3>Tacolocation</h3>
+          <p>A webapp that utilizes the Google Places API to find the 20 taco shops nearest
+            to the WeWork located in Raleigh, North Carolina.
+          </p>
+          <ul class="keywords">
+            <li>Fullstack</li>
+            <li>Google Maps Javascript API</li>
+            <li>HTML/SCSS</li>
+            <li>Javascript</li>
+          </ul>
+          <a class="link" href="https://savaslabs.github.io/taco/" target="_blank">Live Website &nearr;</a>
+        </div>
+      </div>
+      <div id="lifelyhood" role="tabpanel" aria-labelledby="tab-one" hidden>
+        <img alt="Gif of the Lifelyhood website" src="./img/lifelyhood.gif"/>
+        <div>
+          <h3>Lifelyhood</h3>
+          <p>A web app that provides 3 workspaces to keep a user's work, school, and 
+            personal life separate and organized. Each workspace also include subcatergory pages such as:
+            Ledger, to-do list, notes, grocery, health, etc. 
+          </p>
+          <ul class="keywords">
+            <li>Frontend</li>
+            <li>React</li>
+            <li>Django</li>
+            <li>Heroku</li>
+          </ul>
+          <a class="link" href="https://github.com/nalam004/Lifelyhood" target="_blank">View Source code &nearr;</a>
+        </div>
+      </div>
+      <div id="wics" role="tabpanel" aria-labelledby="tab-two" hidden>
+        <img alt="Gif of the WiCS website" src="./img/wics.gif"/>
+        <div>
+          <h3>WiCs</h3>
+          <p>A website for the CCNY Women in Computer Science (WiCS), which 
+            provides information for students to learn more about the WiCS club and what it has to offer 
+            including upcoming events, past collaborators, and current members.
+          </p>
+          <ul class="keywords">
+            <li>Fullstack</li>
+            <li>React</li>
+            <li>Heroku</li>
+          </ul>
+          <a class="link" href="https://github.com/nalam004/wics" target="_blank">View source code &nearr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    
+    <div class="job">
+      <h3>Frontend Developer</h3>
+      <span class="company">Savas Labs, </span>
+      <span class="date">Feb 2022 - Present</span>
+      <p> Build functional and appealing interfaces for web and mobile-based applications
+          using popular CMS frameworks like Drupal or Wordpress. Translating design comps 
+          and wireframes into semantic HTML + CSS code that is consistent across all browsers 
+          and platforms.
+      </p>
     </div>
 
-    <section id="about" aria-labelledby="about-heading">
-      <div class="container">
-        <div class="section-heading">
-          <h2 id="about-heading">About Me</h2>
-        </div>
-
-        <p class="text">
-          👋 Hi, my name is Niharika and I like coding and cats!
-        </p>
-        <p class="text">
-          👩🏻‍🎓 Graduated from CCNY with a Bachelor's in Computer Science.
-        </p>
-        <p class="text">
-          👩‍💻 Bangladeshi-American and New Yorker passionate about front-end development,
-          responsive web design, and UX/UI design.
-        </p>
-        <p class="text">
-          💖 I had the privilege of interning as a software engineer, tech support, and
-          web developer and have decided that web development, specifically front-end, is where
-          my heart lies. I enjoy creating user interfaces and designs that captivate!
-        </p>
-        <p class="text">
-          🐼 When I am not coding or creating graphics on my free time,
-          I like to take nature walks and watch videos of animals. Pandas are my favorite!
-          📚 I also enjoy reading and writing short stories.
-        </p>
-        <a href="assets/resume.pdf" class="btn" download aria-label="Download Niharika Alam's resume (PDF)">Resume</a>
-      </div>
-    </section>
-
-    <section id="skills" class="green" aria-labelledby="skills-heading">
-      <div class="container">
-        <div class="section-heading">
-          <h2 id="skills-heading" class="visually-hidden">Skills</h2>
-        </div>
-        <div class="skills-container">
-          <div class="skills-box">
-            <div class="skills-title">
-              <div class="skills-img">
-                <img src="https://img.icons8.com/wired/512/F7F4E6/html-5.png" alt="HTML5 logo" class="skills-icons" />
-              </div>
-              <h3>HTML5/CSS3</h3>
-            </div>
-          </div>
-
-          <div class="skills-box">
-            <div class="skills-title">
-              <div class="skills-img">
-                <img src="https://img.icons8.com/wired/512/F7F4E6/javascript-logo.png" alt="JavaScript logo" class="skills-icons" />
-              </div>
-              <h3>JavaScript</h3>
-            </div>
-          </div>
-
-          <div class="skills-box">
-            <div class="skills-title">
-              <div class="skills-img">
-                <img src="https://img.icons8.com/wired/512/F7F4E6/python.png" alt="Python logo" class="skills-icons" />
-              </div>
-              <h3>Python</h3>
-            </div>
-          </div>
-
-          <div class="skills-box">
-            <div class="skills-title">
-              <div class="skills-img">
-                <img src="https://img.icons8.com/wired/512/F7F4E6/react.png" alt="React logo" class="skills-icons" />
-              </div>
-              <h3>ReactJS</h3>
-            </div>
-          </div>
-
-          <div class="skills-box">
-            <div class="skills-title">
-              <div class="skills-img">
-                <img src="https://img.icons8.com/wired/512/F7F4E6/adobe-photoshop.png" alt="Adobe Photoshop logo" class="skills-icons" />
-              </div>
-              <h3>Adobe Photoshop</h3>
-            </div>
-          </div>
-
-          <div class="skills-box">
-            <div class="skills-title">
-              <div class="skills-img">
-                <img src="https://img.icons8.com/carbon-copy/512/F7F4E6/figma.png" alt="Figma logo" class="skills-icons" />
-              </div>
-              <h3>Figma</h3>
-            </div>
-          </div>
-
-          <div class="skills-box">
-            <div class="skills-title">
-              <div class="skills-img">
-                <img src="https://img.icons8.com/wired/512/F7F4E6/github.png" alt="GitHub logo" class="skills-icons" />
-              </div>
-              <h3>Version Control</h3>
-            </div>
-          </div>
-
-          <div class="skills-box">
-            <div class="skills-title">
-              <div class="skills-img">
-                <img src="https://img.icons8.com/wired/512/F7F4E6/visual-studio-code-2019--v2.png" alt="Visual Studio Code logo" class="skills-icons" />
-              </div>
-              <h3>Visual Studio</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" aria-labelledby="projects-heading">
-      <div class="container">
-        <div class="section-heading">
-          <h2 id="projects-heading">Projects</h2>
-        </div>
-
-        <ul class="tabs-wrapper">
-          <li class="project-item">
-            <a href="https://ccny-wics.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-              <img src="assets/wics.gif" alt="Screenshot of the CCNY Women in Computer Science club website" />
-              <p>React website for the CCNY Women in Computer Science club that
-                features what we're about, upcoming events, and E-Board Members!</p>
-            </a>
-          </li>
-
-          <li class="project-item">
-            <a href="https://lifelyhood.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-              <img src="assets/lifelyhood.gif" alt="Screenshot of the Lifelyhood web app" />
-              <p>React and Django web app that provides workspaces to keep three essential aspects of your life separate and organized.</p>
-            </a>
-          </li>
-
-          <li class="project-item">
-            <a href="https://github.com/mgmayagu/The-Hive" target="_blank" rel="noopener noreferrer">
-              <img src="assets/hive.png" alt="Screenshot of The Hive team-matching application" />
-              <p>Python, tkinter, and MySQL system that facilitates active teaming of people with similar interest and skill-set to forge groups for a certain do-good project.</p>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="experience" aria-labelledby="experience-heading">
-      <div class="container">
-        <div class="section-heading">
-          <h2 id="experience-heading">Experience</h2>
-        </div>
-
-        <ol id="timeline">
-          <li class="timeline-block">
-            <div class="timeline-img" aria-hidden="true"></div>
-            <div class="timeline-content">
-              <h3>Front-end Developer</h3>
-              <div class="timeline-content-info">
-                <span class="timeline-title">Savas Labs</span>
-                <span class="timeline-date">Feb 2022 - Present</span>
-              </div>
-              <p>Build functional and appealing interfaces for web and mobile-based applications
-                using popular CMS frameworks like Drupal or Wordpress. Translating design comps
-                and wireframes into semantic HTML + CSS code that is consistent across all browsers
-                and platforms.</p>
-            </div>
-          </li>
-
-          <li class="timeline-block">
-            <div class="timeline-img" aria-hidden="true"></div>
-            <div class="timeline-content">
-              <h3>Tech Support Intern</h3>
-              <div class="timeline-content-info">
-                <span class="timeline-title">RF CUNY</span>
-                <span class="timeline-date">Sep 2020 - Feb 2022</span>
-              </div>
-              <p>Assist in the setup of new computer equipment and installing software,
-                configure wireless devices to access the DOE network onsite, and
-                troubleshoot hardware and software problems.</p>
-            </div>
-          </li>
-
-          <li class="timeline-block">
-            <div class="timeline-img" aria-hidden="true"></div>
-            <div class="timeline-content">
-              <h3>Lead Web Developer</h3>
-              <div class="timeline-content-info">
-                <span class="timeline-title">Mott Haven Fridge</span>
-                <span class="timeline-date">June 2021 - Aug 2021</span>
-              </div>
-              <p>Oversaw and set timelines and tasks to a team of 4 web developers,
-                identified user and system requirements for company website, and
-                refined website specifications and resolved technical issues.</p>
-            </div>
-          </li>
-
-          <li class="timeline-block">
-            <div class="timeline-img" aria-hidden="true"></div>
-            <div class="timeline-content">
-              <h3>Software Engineering Intern</h3>
-              <div class="timeline-content-info">
-                <span class="timeline-title">Simons Foundation</span>
-                <span class="timeline-date">Jan 2018 - Feb 2018</span>
-              </div>
-              <p>Participated in 10+ agile workflow meetings with 6 software engineers,
-                worked alongside 3 specialists in IT to learn how to maintain MAC operating systems,
-                and implemented changes to company website using Eclipse C++ and git.</p>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
-  </main>
-
-  <footer id="footer">
-    <div class="container">
-      <div class="flex-container">
-        <ul class="footer-menu">
-          <li class="footer-item">
-            <a href="mailto:niharikaalam1234@gmail.com" aria-label="Email Niharika Alam">
-              <img width="40" src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/512/444440/external-email-business-kiranshastry-lineal-kiranshastry.png" alt="" />
-            </a>
-          </li>
-
-          <li class="footer-item">
-            <a href="https://github.com/nalam004" target="_blank" rel="noopener noreferrer" aria-label="Niharika Alam's GitHub profile">
-              <img width="40" src="https://img.icons8.com/dotty/512/444440/github.png" alt="" />
-            </a>
-          </li>
-
-          <li class="footer-item">
-            <a href="https://www.linkedin.com/in/niharika-alam-7ab76b1bb/" target="_blank" rel="noopener noreferrer" aria-label="Niharika Alam's LinkedIn profile">
-              <img width="40" src="https://img.icons8.com/dotty/512/444440/linkedin.png" alt="" />
-            </a>
-          </li>
-        </ul>
-      </div>
-      <p>Copyright &copy; <span id="year"></span> Niharika Alam. All Rights Reserved</p>
+		<div class="job">
+		  <h3>Tech Support Intern</h3>
+      <span class="company">RF CUNY, </span>
+			<span class="date">Sep 2020 - Feb 2022</span>
+      <p> Assist in the setup of new computer equipment and installing software,
+					configure wireless devices to access the DOE network onsite, and
+					troubleshoot hardware and software problems.
+      </p>
+		</div>
+				
+    <div className="job">
+      <h3>Lead Web Developer</h3>
+      <span class="company">Mott Haven Fridge, </span>
+      <span class="date">June 2021 - Aug 2021</span>   	
+      <p> Oversaw and set timelines and tasks to a team of 4 web developers,
+          identified user and system requirements for company website, and
+          refined website specifications and resolved technical issues.
+      </p>
     </div>
+
+    <div className="job">			
+      <h3>Software Engineering Intern</h3>
+      <span class="company">Simons Foundation, </span>
+      <span class="date">Jan 2018 - Feb 2018</span>
+      <p> Participated in 10+ agile workflow meetings with 6 software engineers, 
+          worked alongside 3 specialists in IT to learn how to maintain MAC operating systems,
+          and implemented changes to company website using Eclipse C++ and git.
+      </p>
+    </div> 
+  </section>
+
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+
+    <div class="masonary-grid">
+      <figure>
+        <blockquote>
+            <p>
+              "Niharika is always looking for the best solution and always checking for accessibility improvements."
+            </p>
+        </blockquote>
+        <figcaption>👩🏽‍💻Savas Labs, <cite>Anonymous</cite></figcaption>
+      </figure>
+      <figure>
+        <blockquote>
+            <p>
+              "I've been impressed with Niharika's scss chops for a while now, but recently her attention to markup
+              semantics has really impressed and delighted me. It's been really wonderful to watch her grow in her
+              frontend development skills. She's also developing a more holistic understanding of Drupal config and
+              module management. This makes her a well-rounded Drupal developer and an asset on teams whether
+              she's purely working on the frontend, or delving into the config to get the data she needs."
+            </p>
+        </blockquote>
+        <figcaption>👩🏽‍💻Savas Labs, <cite>Anonymous</cite></figcaption>
+      </figure>
+      <figure>
+        <blockquote>
+            <p>
+              "Niharika's skill with targeting actionable, valuable pieces of development is something repeatedly noted
+              by her peers and by myself. Her acumen with class structure is laudable, and her own PRs are
+              frequently fully-considered, providing all the necessary code to consider edge cases, while still keeping
+              her result tidy and manageable."
+            </p>
+        </blockquote>
+        <figcaption>👩🏽‍💻Savas Labs, <cite>Anonymous</cite></figcaption>
+      </figure>
+      <figure>
+        <blockquote>
+            <p>
+              "Niharika is a fast learner. She picked up Drupal and Gutenberg pretty quickly 
+              on Duke Today. She's efficient, thorough and works well with the other members of the dev team."
+            </p>
+        </blockquote>
+        <figcaption>👩🏽‍💻Savas Labs, <cite>Anonymous</cite></figcaption>
+      </figure>
+      <figure>
+        <blockquote>
+            <p>
+              "I am very impressed with Niharika's skills and depth of knowledge every time I work with her. She also 
+              doesn't hesitate at an added challenge. There was one specific task to develop a small, new component I 
+              think a less experienced dev might have hesitated or asked for more guidance or input. Niharika was eager 
+              to jump in and without hesitation built the new component that was quickly approved by the client."
+            </p>
+        </blockquote>
+        <figcaption>👩🏽‍💻Savas Labs, <cite>Anonymous</cite></figcaption>
+      </figure>
+      <figure>
+        <blockquote>
+            <p>
+              "Niharika was a positive addition to our project and I enjoyed finally getting a chance to work with her. She
+              approaches her work with an eagle-eye for details and thoroughness. Her feedback is pertinent and
+              many times backed up with references (for example, in PR's when she's suggesting changes)."
+            </p>
+        </blockquote>
+        <figcaption>👩🏽‍💻Savas Labs, <cite>Anonymous</cite></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    
+    <form action="/">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="ex. John Doe">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="ex. john.doe@example.com">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write message here.."></textarea>
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+
+  <footer>
+    <nav>
+      <a href="mailto:niharikaalam1234@gmail.com">
+        <img alt="gmail icon" src="https://img.icons8.com/ios-filled/500/54428e/gmail-new.png"/>
+      </a>
+      <a href="https://www.linkedin.com/in/niharika-alam/">
+        <img alt="linkedin icon" src="https://img.icons8.com/ios-filled/500/54428e/linkedin.png"/>
+      </a>
+      <a href="https://github.com/nalam004">
+        <img alt="github icon" src="https://img.icons8.com/ios-filled/500/54428e/github.png"/>
+      </a>
+    </nav>
+    <small>Copyright 2023, Niharika Alam.</small>
   </footer>
-
-  <script src="script.js"></script>
+  
+  <script type="module" src="index.js"></script>
+  <script src="data/skills.js"></script>
 </body>
+
 </html>
