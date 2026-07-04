@@ -1,30 +1,29 @@
 header {
-  background: #90c290;
   padding: 2rem 0;
 }
 
 header nav {
   max-width: 1180px;
-  margin-left: auto;
-  margin-right: auto;
-  background: #afe3c0;
-  border: 2px solid #2e282a;
+  width: 100%;
+  background: #d1efbd;
   border-radius: 10px;
-  -webkit-box-shadow: #2e282a 4px 4px 0 0;
-          box-shadow: #2e282a 4px 4px 0 0;
   position: fixed;
-  left: 0;
-  right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0 2rem 1px 2rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border: 2px solid transparent;
+  box-shadow: 4px 4px 0 0 transparent;
+  z-index: 1000;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+header nav.scrolled {
+  border-color: #2e282a;
+  box-shadow: 4px 4px 0 0 #2e282a;
 }
 
 @media (max-width: 1180px) {
