@@ -8,7 +8,7 @@ html, body {
   font-family: sans-serif;
   letter-spacing: 0.1em;
   scroll-behavior: smooth;
-  background: #d1efbd;
+  background: #fff5f6;
 }
 
 ::-webkit-scrollbar {
@@ -18,7 +18,7 @@ html, body {
 h1 {
   font-size: clamp(45px, 4vw, 60px);
   margin-bottom: 20px;
-  color: #54428e;
+  color: #6b2d43;
 }
 
 h1, h2 {
@@ -29,7 +29,7 @@ h2 {
   text-align: center;
   font-size: clamp(25px, 3vw, 45px);
   margin-bottom: 25px;
-  color: #54428e;
+  color: #6b2d43;
 }
 
 h3 {
@@ -43,7 +43,7 @@ figure, blockquote, p {
 p {
   line-height: 1.5em;
   letter-spacing: 0.2em;
-  color: #2e282a;
+  color: #6b2d43;
 }
 
 a, button, input[type="submit"] {
@@ -51,7 +51,7 @@ a, button, input[type="submit"] {
 }
 
 a {
-  color: #2e282a;
+  color: #6b2d43;
   text-decoration: none;
 }
 
@@ -94,8 +94,8 @@ section {
 .resume a {
   text-transform: uppercase;
   font-weight: bold;
-  background: #8963ba;
-  color: white;
+  background: #6b2d43;
+  color: #fff5f6;
   border-radius: 5rem;
   border: 2px solid #2e282a;
   -webkit-box-shadow: #2e282a 4px 4px 0 0;
