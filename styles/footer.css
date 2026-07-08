@@ -3,8 +3,6 @@ footer {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 @media (max-width: 1180px) {
@@ -14,13 +12,14 @@ footer {
   }
 }
 
-footer img {
-  width: 2rem;
+footer span {
+  display: block;
+  margin-bottom: 1rem;
 }
 
 footer small {
   display: block;
-  margin-top: 1rem;
-  padding-top: 1rem;
+  margin-top: 5rem;
+  padding: 2rem 0;
   border-top: 1px solid lightgray;
 }
