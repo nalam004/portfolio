@@ -49,23 +49,8 @@ header nav li a {
   display: inline-block;
 }
 
-header nav li a:not(.contact-link)::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  margin-top: 5px;
-  background: transparent;
-  transition: width .3s;
-}
-
-header nav li a:not(.contact-link):hover::after, header nav li a:not(.contact-link).active::after {
-  width: 100%;
-  background: #6b2d43;
-}
-
-header nav .contact-link {
-  text-transform: uppercase;
+header nav .contact-link,
+.resume a {
   font-weight: bold;
   background: #6b2d43;
   color: #fff5f6;
@@ -78,12 +63,14 @@ header nav .contact-link {
   padding: 0.5rem 1rem;
 }
 
-header nav .contact-link:active {
+header nav .contact-link:active,
+.resume a:active {
   box-shadow: none;
   transform: translate(4px, 4px);
 }
 
-header nav .contact-link:hover {
+header nav .contact-link:hover,
+.resume a:hover {
   background: transparent;
   color: #2e282a;
 }
