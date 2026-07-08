@@ -47,6 +47,7 @@ a, button, input[type="submit"] {
 }
 
 a {
+  display: inline-block;
   color: #6b2d43;
   text-decoration: none;
 }

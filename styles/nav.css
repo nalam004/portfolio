@@ -45,10 +45,6 @@ header nav ul {
   gap: 2rem;
 }
 
-header nav li a {
-  display: inline-block;
-}
-
 header nav .contact-link,
 .resume a {
   font-weight: bold;
