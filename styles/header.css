@@ -23,8 +23,11 @@ header .container .text-wrap {
   flex-basis: 50%;
 }
 
-header .container img {
+header .container figure {
   flex-basis: 50%;
+}
+
+header .container img {
   width: 100%;
   height: auto;
   aspect-ratio: 1/1;
