@@ -1,7 +1,3 @@
-header {
-  padding: 2rem 0;
-}
-
 header nav {
   max-width: 1180px;
   width: 100%;
@@ -60,7 +56,6 @@ header nav li a:not(.contact-link)::after {
   height: 2px;
   margin-top: 5px;
   background: transparent;
-  -webkit-transition: width .3s;
   transition: width .3s;
 }
 
@@ -126,40 +121,5 @@ header nav .contact-link:hover {
   }
   header nav ul.open + .menu-icon {
     transform: rotate(90deg);
-  }
-}
-
-header .container {
-  max-width: 1180px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 8rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-@media (max-width: 1180px) {
-  header .container {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-}
-
-header .container .text-wrap {
-  flex-basis: 50%;
-}
-
-header .container img {
-  flex-basis: 50%;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-}
-
-@media (max-width: 800px) {
-  header .container {
-    flex-direction: column;
   }
 }
