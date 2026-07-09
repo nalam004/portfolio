@@ -1,3 +1,25 @@
+#about .container {
+  position: relative;
+  background: lightpink;
+  padding: 3rem;
+  border-radius: 30px;
+}
+
+#about .container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background: url("assets/cunicorn.png") no-repeat;
+  background-size: contain;
+}
+
+#about .container p {
+  margin-bottom: 1rem;
+}
+
 ul.skills-list {
   display: flex;
   flex-wrap: wrap;
