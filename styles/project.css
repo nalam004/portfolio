@@ -1,0 +1,10 @@
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.project img {
+    flex-basis: 50%;
+    width: 100%;
+}
