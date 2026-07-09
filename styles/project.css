@@ -4,11 +4,11 @@
     gap: 25px;
 }
 
-.project img {
-    flex-basis: 50%;
-    width: 100%;
-}
-
+.project figure,
 .description {
     flex-basis: 50%;
+}
+
+.project img {
+    width: 100%;
 }
