@@ -9,32 +9,40 @@ window.addEventListener('scroll', () => {
   }
 });
 
-const menuToggle = document.getElementById('menu-toggle');
-const navMenu = document.getElementById('primary-nav-menu');
-const menuIcon = menuToggle.querySelector('i');
+// Navbar mobile toggle
+const menuIcon = document.querySelector('.menu-icon');
+const navLinks = document.querySelector('#nav-links');
 
-document.getElementById('year').textContent = new Date().getFullYear();
-
-function setMenuState(isOpen) {
-  navMenu.classList.toggle('active', isOpen);
-  menuToggle.setAttribute('aria-expanded', String(isOpen));
-  menuIcon.classList.toggle('fa-bars', !isOpen);
-  menuIcon.classList.toggle('fa-times', isOpen);
+function toggleMenu() {
+  const isOpen = navLinks.classList.toggle('active');
+  menuIcon.setAttribute('aria-expanded', isOpen);
+  menuIcon.innerHTML = isOpen ? '&#10005;' : '&#9776;';
 }
 
-menuToggle.addEventListener('click', () => {
-  const isOpen = navMenu.classList.contains('active');
-  setMenuState(!isOpen);
+function closeMenu() {
+  navLinks.classList.remove('active');
+  menuIcon.setAttribute('aria-expanded', false);
+  menuIcon.innerHTML = '&#9776;';
+}
+
+menuIcon.addEventListener('click', toggleMenu);
+
+// Close menu when a link is clicked
+document.querySelectorAll('#nav-links a').forEach(link => {
+  link.addEventListener('click', closeMenu);
 });
 
-// Close the mobile menu after clicking a nav link
-navMenu.querySelectorAll('.nav-link').forEach((link) => {
-  link.addEventListener('click', () => setMenuState(false));
+// Close menu when clicking outside of it
+document.addEventListener('click', (e) => {
+  const isClickInsideNav = e.target.closest('nav');
+  if (!isClickInsideNav && navLinks.classList.contains('active')) {
+    closeMenu();
+  }
 });
-
-const skillList = document.getElementsByClassName("skills-list")[0];
 
 // Appends skills data to skills section
+const skillList = document.getElementsByClassName("skills-list")[0];
+
 skills.forEach(skill => {
   const item = document.createElement("li");
   const icon = document.createElement("img");
