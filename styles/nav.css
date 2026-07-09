@@ -37,9 +37,11 @@ header nav #logo {
 
 header nav .menu-icon {
   display: none;
+  color: #2e282a;
+  transition: 0.1s ease-in;
 }
 
-header nav ul {
+#nav-links {
   display: flex;
   align-items: flex-end;
   gap: 2rem;
@@ -75,15 +77,12 @@ header nav .contact-link:hover,
   header nav {
     padding: 1rem 2rem;
   }
+
   header nav .menu-icon {
     display: block;
-    color: #2e282a;
-    cursor: pointer;
-    -webkit-transition: 0.1s ease-in;
-    transition: 0.1s ease-in;
   }
-  header nav ul {
-    background: #afe3c0;
+
+  #nav-links {
     border: 2px solid #2e282a;
     border-radius: 10px;
     padding: 1rem;
@@ -91,18 +90,14 @@ header nav .contact-link:hover,
     top: -500px;
     bottom: 0;
     right: 0;
-    -webkit-box-orient: vertical;
     flex-direction: column;
     align-items: flex-start;
+    gap: 1rem;
     height: fit-content;
-    -webkit-transition: 0.1s ease-in;
     transition: 0.1s ease-in;
   }
-  header nav ul.open {
+
+  #nav-links.active {
     top: 50px;
-    gap: 1rem;
-  }
-  header nav ul.open + .menu-icon {
-    transform: rotate(90deg);
   }
 }
