@@ -99,27 +99,3 @@ section {
   justify-content: center;
   margin-top: 2rem;
 }
-
-.masonary-grid {
-  columns: 3;
-  gap: 20px;
-}
-
-@media (max-width: 1160px) {
-  .masonary-grid {
-    columns: 2;
-  }
-}
-
-@media (max-width: 800px) {
-  .masonary-grid {
-    columns: 1;
-  }
-}
-
-.masonary-grid figure {
-  display: inline-block;
-  padding: 20px;
-  background: #90c290;
-  border-radius: 1rem;
-}
