@@ -8,3 +8,7 @@
     flex-basis: 50%;
     width: 100%;
 }
+
+.description {
+    flex-basis: 50%;
+}
