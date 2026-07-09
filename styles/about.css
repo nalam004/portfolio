@@ -5,14 +5,25 @@
   border-radius: 30px;
 }
 
-#about .container::after {
+#about .container::before {
   content: '';
   position: absolute;
-  top: 0;
+  bottom: 100%;
   left: 0;
   width: 100px;
   height: 100px;
-  background: url("assets/cunicorn.png") no-repeat;
+  background: url("../assets/cunicorn.png") no-repeat;
+  background-size: contain;
+}
+
+#about .container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background: url("../assets/computerkitty.png") no-repeat;
   background-size: contain;
 }
 
