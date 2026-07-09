@@ -9,7 +9,7 @@
   content: '';
   position: absolute;
   bottom: 100%;
-  left: 0;
+  left: 65px;
   width: 100px;
   height: 100px;
   background: url("../assets/cunicorn.png") no-repeat;
@@ -19,8 +19,8 @@
 #about .container::after {
   content: '';
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: -7px;
+  right: 60px;
   width: 100px;
   height: 100px;
   background: url("../assets/computerkitty.png") no-repeat;
