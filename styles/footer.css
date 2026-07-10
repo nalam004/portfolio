@@ -16,6 +16,7 @@ footer .container::after {
   background-size: contain;
   background-position: left bottom;
   height: 262px;
+  pointer-events: none;
 }
 
 footer span {
@@ -26,9 +27,10 @@ footer span {
 }
 
 footer small {
+  position: relative;
+  z-index: 1;
   display: block;
   margin-top: 5rem;
   padding: 2rem 0;
-  border-top: 1px solid lightgray;
   color: #2e282a;
 }
