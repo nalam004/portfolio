@@ -1,16 +1,4 @@
-#experience h3 {
-  margin-bottom: 10px;
-}
-
 #experience span {
-  color: #8963ba;
-}
-
-#experience .company {
-  font-weight: 600;
-}
-
-#experience .date {
-  display: inline-block;
+  color: #2e282a;
   margin-bottom: 1rem;
 }
