@@ -1,6 +1,34 @@
 .project {
     display: flex;
     gap: 25px;
+    margin-bottom: 60px;
+}
+
+.project:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 800px) {
+    .project, .project:nth-child(even) {
+        flex-direction: column;
+    }
+}
+
+.project .keywords {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+.project .keywords li {
+    border: 2px solid #6b2d43;
+    padding: 8px 12px;
+    border-radius: 50px;
+}
+
+.project h3 {
+    margin: 0 0 10px 0;
 }
 
 .project figure,

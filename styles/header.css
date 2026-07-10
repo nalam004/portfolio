@@ -37,6 +37,7 @@ header .container img {
 
 @media (max-width: 800px) {
   header .container {
+    margin-top: 5rem;
     flex-direction: column;
   }
 

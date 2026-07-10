@@ -30,9 +30,3 @@ button:focus-visible {
   outline: 3px solid #4d90fe;
   outline-offset: 2px;
 }
-
-.project-item a {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-}
