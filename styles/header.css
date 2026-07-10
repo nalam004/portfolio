@@ -40,6 +40,10 @@ header .container img {
     flex-direction: column;
   }
 
+  header .container figure {
+    width: 60%;
+  }
+
   header .container .text-wrap {
     text-align: center;
   }
