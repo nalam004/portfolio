@@ -1,32 +1,23 @@
 header nav {
-  max-width: 1180px;
   width: 100%;
-  background: #fff5f6;
-  border-radius: 10px;
   position: fixed;
-  top: 20px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1000;
+  background: #fff5f6;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
   border: 2px solid transparent;
   box-shadow: 4px 4px 0 0 transparent;
-  z-index: 1000;
   transition: border-color 0.3s ease, box-shadow 0.3s ease; 
 }
 
 header nav.scrolled {
   border-color: #2e282a;
   box-shadow: 4px 4px 0 0 #2e282a;
-}
-
-@media (max-width: 1180px) {
-  header nav {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
 }
 
 header nav #logo {
