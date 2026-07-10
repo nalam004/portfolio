@@ -3,6 +3,20 @@ footer {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  position: relative;
+  background: #c4d8e5;
+  padding: 3rem;
+  border-radius: 30px;
+}
+
+footer::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("../assets/wave.svg") no-repeat;
+  background-size: contain;
 }
 
 @media (max-width: 1180px) {
