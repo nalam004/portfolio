@@ -37,6 +37,7 @@ header nav .menu-icon {
   display: flex;
   align-items: flex-end;
   gap: 2rem;
+  background: #fff5f6;
 }
 
 header nav .contact-link,
