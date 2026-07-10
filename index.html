@@ -22,16 +22,18 @@
 </head>
 
 <body>
+  <a href="#main" class="sr-only">Skip to main content</a>
+
   <header>
-    <nav>
-      <button id="logo">{ Niharika.Alam }</button>
+    <nav aria-label="Primary">
+      <a href="#" id="logo" aria-label="Niharika Alam, back to top">{ Niharika.Alam }</a>
       <ul id="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a class="contact-link" href="#contact">Contact</a></li>
       </ul>
-      <button class="menu-icon" aria-expanded="false" aria-label="Toggle menu">&#9776;</button>
+      <button class="menu-icon" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">&#9776;</button>
     </nav>
 
     <div class="container">
@@ -46,164 +48,166 @@
     </div>
   </header>
 
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
+  <main id="main">
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
 
-      <p>👩🏻‍💻Hi, my name is Niharika and I like coding and cats!</p>
-      <p>👩🏻‍🎓Graduated from the City College of New York with a Bachelor's in Computer Science.</p>
-      <p>🗽Bangladeshi-American and New Yorker passionate about front-end development,
-          responsive web design, and UX/UI design.</p>
-      <p>💕I had the privilege of interning as a software engineer, tech support, and 
-          web developer and have decided that web development, specifically front-end, is where 
-          my heart lies. I enjoy creating user interfaces and designs that captivate!</p>
-      <p>🐼When I am not coding or creating graphics on my free time, 
-          I like to take nature walks and watch videos of animals. Pandas are my favorite!</p>  
-      <p>📚I also enjoy reading and writing short stories.</p>
+        <p><span aria-hidden="true">👩🏻‍💻</span> Hi, my name is Niharika and I like coding and cats!</p>
+        <p><span aria-hidden="true">👩🏻‍🎓</span> Graduated from the City College of New York with a Bachelor's in Computer Science.</p>
+        <p><span aria-hidden="true">🗽</span> Bangladeshi-American and New Yorker passionate about front-end development,
+            responsive web design, and UX/UI design.</p>
+        <p><span aria-hidden="true">💕</span> I had the privilege of interning as a software engineer, tech support, and 
+            web developer and have decided that web development, specifically front-end, is where 
+            my heart lies. I enjoy creating user interfaces and designs that captivate!</p>
+        <p><span aria-hidden="true">🐼</span> When I am not coding or creating graphics on my free time, 
+            I like to take nature walks and watch videos of animals. Pandas are my favorite!</p>  
+        <p><span aria-hidden="true">📚</span> I also enjoy reading and writing short stories.</p>
 
-      <h3>Skills</h3>
-      <ul class="skills-list"></ul>
+        <h3>Skills</h3>
+        <ul class="skills-list" aria-label="Skills"></ul>
 
-      <div class='resume'><a href="./assets/resume.pdf" download>Resume</a></div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-
-    <div id="duke" class="project">
-      <figure><img alt="Gif of the Duke Today website" src="./assets/duke.gif"/></figure>
-      
-      <div class="description">
-        <h3>Duke Today</h3>
-        <p>
-          A redesign of the flagship news website of Duke University using 
-          Drupal 9 as a CMS and Gutenberg Editor for story pages, combining core blocks with a library 
-          of custom blocks developed specifically for their needs.
-        </p>
-        <ul class="keywords">
-          <li>Frontend</li>
-          <li>Drupal 9</li>
-          <li>Gutenberg Editor</li>
-          <li>HTML/SCSS</li>
-        </ul>
-        <a class="link" href="https://today.duke.edu/" target="_blank">Live Website &nearr;</a>
+        <div class='resume'><a href="./assets/resume.pdf" aria-label="Download resume (PDF)" download>Resume</a></div>
       </div>
-    </div>
+    </section>
 
-    <div id="taco" class="project">
-      <figure><img alt="Gif of the Tacolocation website" src="./assets/tacolocation.gif"/></figure>
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <article id="duke" class="project">
+        <figure><img alt="Gif of the Duke Today website" src="./assets/duke.gif"/></figure>
+        
+        <div class="description">
+          <h3>Duke Today</h3>
+          <p>
+            A redesign of the flagship news website of Duke University using 
+            Drupal 9 as a CMS and Gutenberg Editor for story pages, combining core blocks with a library 
+            of custom blocks developed specifically for their needs.
+          </p>
+          <ul class="keywords">
+            <li>Frontend</li>
+            <li>Drupal 9</li>
+            <li>Gutenberg Editor</li>
+            <li>HTML/SCSS</li>
+          </ul>
+          <a class="link" href="https://today.duke.edu/" target="_blank" rel="noopener noreferrer">Live Website &nearr;<span class="sr-only"> (opens in new tab)</span></a>
+        </div>
+      </article>
+
+      <article id="taco" class="project">
+        <figure><img alt="Gif of the Tacolocation website" src="./assets/tacolocation.gif"/></figure>
+        
+        <div class="description">
+          <h3>Tacolocation</h3>
+          <p>A webapp that utilizes the Google Places API to find the 20 taco shops nearest
+            to the WeWork located in Raleigh, North Carolina.
+          </p>
+          <ul class="keywords">
+            <li>Fullstack</li>
+            <li>Google Maps Javascript API</li>
+            <li>HTML/SCSS</li>
+            <li>Javascript</li>
+          </ul>
+          <a class="link" href="https://savaslabs.github.io/taco/" target="_blank" rel="noopener noreferrer">Live Website &nearr;<span class="sr-only"> (opens in new tab)</span></a>
+        </div>
+      </article>
+
+      <article id="lifelyhood" class="project">
+        <figure><img alt="Gif of the Lifelyhood website" src="./assets/lifelyhood.gif"/></figure>
+        
+        <div class="description">
+          <h3>Lifelyhood</h3>
+          <p>A web app that provides 3 workspaces to keep a user's work, school, and 
+            personal life separate and organized. Each workspace also include subcatergory pages such as:
+            Ledger, to-do list, notes, grocery, health, etc. 
+          </p>
+          <ul class="keywords">
+            <li>Frontend</li>
+            <li>React</li>
+            <li>Django</li>
+            <li>Heroku</li>
+          </ul>
+          <a class="link" href="https://github.com/nalam004/Lifelyhood" target="_blank" rel="noopener noreferrer">View Source code &nearr;<span class="sr-only"> (opens in new tab)</span></a>
+        </div>
+      </article>
+
+      <article id="wics" class="project">
+        <figure><img alt="Gif of the WiCS website" src="./assets/wics.gif"/></figure>
+        
+        <div class="description">
+          <h3>WiCs</h3>
+          <p>A website for the CCNY Women in Computer Science (WiCS), which 
+            provides information for students to learn more about the WiCS club and what it has to offer 
+            including upcoming events, past collaborators, and current members.
+          </p>
+          <ul class="keywords">
+            <li>Fullstack</li>
+            <li>React</li>
+            <li>Heroku</li>
+          </ul>
+          <a class="link" href="https://github.com/nalam004/wics" target="_blank" rel="noopener noreferrer">View source code &nearr;<span class="sr-only"> (opens in new tab)</span></a>
+        </div>
+      </article>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
       
-      <div class="description">
-        <h3>Tacolocation</h3>
-        <p>A webapp that utilizes the Google Places API to find the 20 taco shops nearest
-          to the WeWork located in Raleigh, North Carolina.
+      <article class="job">
+        <h3>Frontend Developer</h3>
+        <span class="company">Savas Labs, </span>
+        <span class="date">Feb 2022 - Present</span>
+        <p> Build functional and appealing interfaces for web and mobile-based applications
+            using popular CMS frameworks like Drupal or Wordpress. Translating design comps 
+            and wireframes into semantic HTML + CSS code that is consistent across all browsers 
+            and platforms.
         </p>
-        <ul class="keywords">
-          <li>Fullstack</li>
-          <li>Google Maps Javascript API</li>
-          <li>HTML/SCSS</li>
-          <li>Javascript</li>
-        </ul>
-        <a class="link" href="https://savaslabs.github.io/taco/" target="_blank">Live Website &nearr;</a>
-      </div>
-    </div>
+      </article>
 
-    <div id="lifelyhood" class="project">
-      <figure><img alt="Gif of the Lifelyhood website" src="./assets/lifelyhood.gif"/></figure>
-      
-      <div class="description">
-        <h3>Lifelyhood</h3>
-        <p>A web app that provides 3 workspaces to keep a user's work, school, and 
-          personal life separate and organized. Each workspace also include subcatergory pages such as:
-          Ledger, to-do list, notes, grocery, health, etc. 
+      <article class="job">
+        <h3>Tech Support Intern</h3>
+        <span class="company">RF CUNY, </span>
+        <span class="date">Sep 2020 - Feb 2022</span>
+        <p> Assist in the setup of new computer equipment and installing software,
+            configure wireless devices to access the DOE network onsite, and
+            troubleshoot hardware and software problems.
         </p>
-        <ul class="keywords">
-          <li>Frontend</li>
-          <li>React</li>
-          <li>Django</li>
-          <li>Heroku</li>
-        </ul>
-        <a class="link" href="https://github.com/nalam004/Lifelyhood" target="_blank">View Source code &nearr;</a>
-      </div>
-    </div>
-
-    <div id="wics" class="project">
-      <figure><img alt="Gif of the WiCS website" src="./assets/wics.gif"/></figure>
-      
-      <div class="description">
-        <h3>WiCs</h3>
-        <p>A website for the CCNY Women in Computer Science (WiCS), which 
-          provides information for students to learn more about the WiCS club and what it has to offer 
-          including upcoming events, past collaborators, and current members.
+      </article>
+          
+      <article class="job">
+        <h3>Lead Web Developer</h3>
+        <span class="company">Mott Haven Fridge, </span>
+        <span class="date">June 2021 - Aug 2021</span>   	
+        <p> Oversaw and set timelines and tasks to a team of 4 web developers,
+            identified user and system requirements for company website, and
+            refined website specifications and resolved technical issues.
         </p>
-        <ul class="keywords">
-          <li>Fullstack</li>
-          <li>React</li>
-          <li>Heroku</li>
-        </ul>
-        <a class="link" href="https://github.com/nalam004/wics" target="_blank">View source code &nearr;</a>
-      </div>
-    </div>
-  </section>
+      </article>
 
-  <section id="experience">
-    <h2>Experience</h2>
-    
-    <div class="job">
-      <h3>Frontend Developer</h3>
-      <span class="company">Savas Labs, </span>
-      <span class="date">Feb 2022 - Present</span>
-      <p> Build functional and appealing interfaces for web and mobile-based applications
-          using popular CMS frameworks like Drupal or Wordpress. Translating design comps 
-          and wireframes into semantic HTML + CSS code that is consistent across all browsers 
-          and platforms.
-      </p>
-    </div>
-
-		<div class="job">
-		  <h3>Tech Support Intern</h3>
-      <span class="company">RF CUNY, </span>
-			<span class="date">Sep 2020 - Feb 2022</span>
-      <p> Assist in the setup of new computer equipment and installing software,
-					configure wireless devices to access the DOE network onsite, and
-					troubleshoot hardware and software problems.
-      </p>
-		</div>
-				
-    <div className="job">
-      <h3>Lead Web Developer</h3>
-      <span class="company">Mott Haven Fridge, </span>
-      <span class="date">June 2021 - Aug 2021</span>   	
-      <p> Oversaw and set timelines and tasks to a team of 4 web developers,
-          identified user and system requirements for company website, and
-          refined website specifications and resolved technical issues.
-      </p>
-    </div>
-
-    <div className="job">			
-      <h3>Software Engineering Intern</h3>
-      <span class="company">Simons Foundation, </span>
-      <span class="date">Jan 2018 - Feb 2018</span>
-      <p> Participated in 10+ agile workflow meetings with 6 software engineers, 
-          worked alongside 3 specialists in IT to learn how to maintain MAC operating systems,
-          and implemented changes to company website using Eclipse C++ and git.
-      </p>
-    </div> 
-  </section>
+      <article class="job">			
+        <h3>Software Engineering Intern</h3>
+        <span class="company">Simons Foundation, </span>
+        <span class="date">Jan 2018 - Feb 2018</span>
+        <p> Participated in 10+ agile workflow meetings with 6 software engineers, 
+            worked alongside 3 specialists in IT to learn how to maintain MAC operating systems,
+            and implemented changes to company website using Eclipse C++ and git.
+        </p>
+      </article> 
+    </section>
+  </main>
 
   <footer id="contact">
     <h2>Contact</h2>
 
-    <nav>
+    <address>
       <span>
         Email me at <a href="mailto:niharikaalam1234@gmail.com">niharikaalam1234@gmail.com</a>
       </span>
 
       <span>Call me at <a href="tel:+19292163352">(929) 216-3352</a></span>
 
-      <span>Add me on <a href="https://www.linkedin.com/in/niharika-alam/">linkedin</a></span>
-    </nav>
+      <span>Add me on <a href="https://www.linkedin.com/in/niharika-alam/" target="_blank" rel="noopener noreferrer">linkedin<span class="sr-only"> (opens in new tab)</span></a></span>
+    </address>
     <small>Copyright 2026, Niharika Alam.</small>
   </footer>
   
