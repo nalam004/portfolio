@@ -17,6 +17,7 @@ header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 30px;
 }
 
 header .container .text-wrap {
@@ -37,5 +38,9 @@ header .container img {
 @media (max-width: 800px) {
   header .container {
     flex-direction: column;
+  }
+
+  header .container .text-wrap {
+    text-align: center;
   }
 }
