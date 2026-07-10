@@ -14,7 +14,8 @@ footer .container::after {
   width: 100%;
   background: url(../assets/wave.svg) no-repeat;
   background-size: contain;
-  height: 256px;
+  background-position: left bottom;
+  height: 262px;
 }
 
 footer span {
