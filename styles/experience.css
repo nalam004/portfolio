@@ -1,4 +1,9 @@
-#experience span {
+.job {
+  margin-bottom: 25px;
+}
+
+.job span {
+  display: block;
   color: #2e282a;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
 }
