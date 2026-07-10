@@ -48,7 +48,7 @@ a {
   text-decoration: none;
 }
 
-a:not(.contact-link, .resume a)::after {
+a:not(.contact-link, .resume a, #logo)::after {
   content: '';
   display: block;
   width: 0;
@@ -58,8 +58,8 @@ a:not(.contact-link, .resume a)::after {
   transition: width 0.3s ease;
 }
 
-a:not(.contact-link, .resume a):hover::after, 
-a:not(.contact-link, .resume a).active::after {
+a:not(.contact-link, .resume a, #logo):hover::after, 
+a:not(.contact-link, .resume a, #logo).active::after {
   width: 100%;
   background: #6b2d43;
 }
