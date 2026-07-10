@@ -8,7 +8,7 @@ html, body {
   font-family: sans-serif;
   letter-spacing: 0.1em;
   scroll-behavior: smooth;
-  background: #fff5f6;
+  background: #e8ecef;
 }
 
 ::-webkit-scrollbar {
@@ -18,7 +18,7 @@ html, body {
 h1 {
   font-size: clamp(45px, 4vw, 60px);
   margin-bottom: 20px;
-  color: #6b2d43;
+  color: #1c2b48;
 }
 
 h1, h2 {
@@ -29,13 +29,13 @@ h2 {
   text-align: center;
   font-size: clamp(25px, 3vw, 45px);
   margin-bottom: 25px;
-  color: #6b2d43;
+  color: #1c2b48;
 }
 
 p {
   line-height: 1.5em;
   letter-spacing: 0.2em;
-  color: #6b2d43;
+  color: #1c2b48;
 }
 
 a, button, input[type="submit"] {
@@ -44,7 +44,7 @@ a, button, input[type="submit"] {
 
 a {
   display: inline-block;
-  color: #6b2d43;
+  color: #1c2b48;
   text-decoration: none;
 }
 
@@ -61,7 +61,7 @@ a:not(.contact-link, .resume a, #logo)::after {
 a:not(.contact-link, .resume a, #logo):hover::after, 
 a:not(.contact-link, .resume a, #logo).active::after {
   width: 100%;
-  background: #6b2d43;
+  background: #1c2b48;
 }
 
 button {

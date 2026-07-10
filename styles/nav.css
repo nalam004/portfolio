@@ -5,7 +5,7 @@ header nav {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
-  background: #fff5f6;
+  background: #e8ecef;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -42,14 +42,14 @@ header nav .menu-icon {
   display: flex;
   align-items: flex-end;
   gap: 2rem;
-  background: #fff5f6;
+  background: #e8ecef;
 }
 
 header nav .contact-link,
 .resume a {
   font-weight: bold;
-  background: #6b2d43;
-  color: #fff5f6;
+  background: #1c2b48;
+  color: #e8ecef;
   border-radius: 5rem;
   border: 2px solid #2e282a;
   box-shadow: #2e282a 4px 4px 0 0;
