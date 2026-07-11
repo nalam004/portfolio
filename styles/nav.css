@@ -1,6 +1,6 @@
 nav {
   max-width: 1178px;
-  width: calc(100% - 76px);
+  width: calc(100% - 75px);
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
@@ -74,7 +74,7 @@ nav .menu-icon {
 @media (max-width: 800px) {
   nav {
     padding: 1rem 2rem;
-    width: calc(100% - 108px);
+    width: calc(100% - 107px);
   }
 
   nav .menu-icon {
