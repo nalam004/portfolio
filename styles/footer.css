@@ -50,6 +50,10 @@ footer span {
   color: #2e282a;
 }
 
+footer a {
+  display: inline-block;
+}
+
 footer small {
   position: relative;
   z-index: 1;
