@@ -54,7 +54,7 @@ a {
   text-decoration: none;
 }
 
-a:not(.contact-link, .resume a, #logo)::after {
+a:not(.contact-link, .resume, #logo)::after {
   content: '';
   display: block;
   width: 0;
@@ -64,8 +64,8 @@ a:not(.contact-link, .resume a, #logo)::after {
   transition: width 0.3s ease;
 }
 
-a:not(.contact-link, .resume a, #logo):hover::after, 
-a:not(.contact-link, .resume a, #logo).active::after {
+a:not(.contact-link, .resume, #logo):hover::after, 
+a:not(.contact-link, .resume, #logo).active::after {
   width: 100%;
   background: #1c2b48;
 }
@@ -81,8 +81,8 @@ ul {
   padding: 0;
 }
 
-section, footer {
-  max-width: 1180px;
+header, section, footer {
+  max-width: 1178px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -92,8 +92,8 @@ section {
   margin-bottom: 5rem;
 }
 
-@media (max-width: 1180px) {
-  section, footer {
+@media (max-width: 1178px) {
+  header, section, footer {
     margin-left: 20px;
     margin-right: 20px;
   }
