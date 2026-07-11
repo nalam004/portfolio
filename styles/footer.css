@@ -11,8 +11,8 @@ footer .container::before {
   position: absolute;
   width: 100px;
   height: 100px;
-  top: 70px;
-  right: 70px;
+  bottom: 85px;
+  right: 200px;
   background: url("../assets/flyingkitty.png") no-repeat;
   background-size: contain;
   will-change: transform;
