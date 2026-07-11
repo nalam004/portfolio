@@ -1,5 +1,5 @@
 // Navbar scroll animation
-const navbar = document.querySelector('header nav');
+const navbar = document.querySelector('nav');
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > 50) {
@@ -41,14 +41,16 @@ document.addEventListener('click', (e) => {
 });
 
 // Appends skills data to skills section
-const skillList = document.getElementsByClassName("skills-list")[0];
+const skillList = document.querySelector(".skills-list");
 
 skills.forEach(skill => {
   const item = document.createElement("li");
   const icon = document.createElement("img");
+  
   icon.src = skill.icon;
-  icon.alt = skill.name;
-  item.innerHTML = skill.name;
-  item.prepend(icon);
+  icon.alt = "";
+  icon.setAttribute("aria-hidden", "true");
+
+  item.append(icon, document.createTextNode(skill.name));
   skillList.append(item);
 });
