@@ -72,3 +72,12 @@ footer small {
     margin-top: 8rem;
   }
 }
+
+@media (max-width: 560px) {
+  footer .container::before {
+    animation: unset;
+    bottom: unset;
+    top: -35px;
+    right: 5px;
+  }
+}
