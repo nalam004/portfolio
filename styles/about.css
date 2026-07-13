@@ -69,3 +69,13 @@ ul.skills-list li img {
     right: 30px;
   }
 }
+
+@media (max-width: 480px) {
+  ul.skills-list {
+    display: block;
+  }
+
+  ul.skills-list li {
+    margin-bottom: 20px;
+  }
+}
