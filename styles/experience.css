@@ -1,9 +1,31 @@
+#experience {
+  position: relative;
+}
+
+#experience::after {
+  content: "";
+  position: absolute;
+  background: #1c2b48;
+  width: 2px;
+  height: 100%;
+}
+
 .job {
+  display: flex;
+  gap: 60px;
   margin-bottom: 25px;
+}
+
+.job:nth-child(even) {
+  flex-direction: row-reverse;
 }
 
 .job span {
   display: block;
   color: #2e282a;
   margin-bottom: 10px;
+  background: #c4d8e5;
+  border: 2px solid #1c2b48;
+  padding: 8px 12px;
+  border-radius: 10px;
 }
