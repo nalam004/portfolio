@@ -13,7 +13,7 @@ footer .container::before {
   height: 100px;
   bottom: 85px;
   right: 200px;
-  background: url("../assets/flyingkitty.png") no-repeat;
+  background: url(../assets/flyingkitty.png) no-repeat;
   background-size: contain;
   will-change: transform;
   animation: cat-peek linear;

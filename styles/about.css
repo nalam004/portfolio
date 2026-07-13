@@ -18,13 +18,13 @@
 #about .container::before {
   bottom: 100%;
   left: 65px;
-  background-image: url("../assets/cunicorn.png");
+  background-image: url(../assets/cunicorn.png);
 }
 
 #about .container::after {
   bottom: -7px;
   right: 60px;
-  background-image: url("../assets/computerkitty.png");
+  background-image: url(../assets/computerkitty.png);
 }
 
 #about .container p {

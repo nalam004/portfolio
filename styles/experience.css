@@ -29,17 +29,19 @@
 
 .job-year {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .job-year::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 100%;
+  left: 105.5%;
   width: 20px;
   height: 20px;
   background: url(../assets/savege.png) no-repeat;
   background-size: contain;
+  z-index: 1;
 }
 
 .job-year span {
@@ -70,7 +72,7 @@
     font-size: 12px;
   }
 
-  .timeline::after {
+  .timeline::after, .job-year::after {
     display: none;
   }
 }
