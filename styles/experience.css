@@ -1,11 +1,11 @@
-#experience {
+.timeline {
   position: relative;
 }
 
-#experience h2::after {
+.timeline::after {
   content: "";
   position: absolute;
-  top: 100%;
+  top: 0;
   left: 50%;
   background: #1c2b48;
   width: 2px;
@@ -50,7 +50,7 @@
     flex-direction: column;
   }
 
-  #experience h2::after {
+  .timeline::after {
     display: none;
   }
 }
