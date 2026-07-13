@@ -27,6 +27,21 @@
   flex-basis: 50%;
 }
 
+.job-year {
+  position: relative;
+}
+
+.job-year::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 20px;
+  height: 20px;
+  background: url(../assets/savege.png) no-repeat;
+  background-size: contain;
+}
+
 .job-year span {
   display: block;
   width: fit-content;
