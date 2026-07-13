@@ -2,21 +2,21 @@
   position: relative;
 }
 
-#experience::after {
+#experience h2::after {
   content: "";
   position: absolute;
-  top: 75px;
+  top: 100%;
   left: 50%;
   background: #1c2b48;
   width: 2px;
-  height: calc(100% - 75px);
+  height: 100%;
   border-radius: 1px;
 }
 
 .job {
   display: flex;
   align-items: flex-start;
-  gap: 0 60px;
+  gap: 10px 60px;
   margin-bottom: 40px;
   max-width: 800px;
   margin-left: auto;
@@ -42,14 +42,15 @@
   display: block;
   font-weight: bold;
   color: #2e282a;
-}
-
-.job-year, .company {
   margin-bottom: 10px;
 }
 
 @media (max-width: 600px) {
   .job {
     flex-direction: column;
+  }
+
+  #experience h2::after {
+    display: none;
   }
 }
