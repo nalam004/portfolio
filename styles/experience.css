@@ -50,6 +50,11 @@
     flex-direction: column;
   }
 
+  .job-year span {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
   .timeline::after {
     display: none;
   }
