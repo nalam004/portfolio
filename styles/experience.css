@@ -5,27 +5,38 @@
 #experience::after {
   content: "";
   position: absolute;
+  top: 0;
+  left: 50%;
   background: #1c2b48;
   width: 2px;
   height: 100%;
+  border-radius: 10px;
 }
 
 .job {
   display: flex;
+  align-items: flex-start;
   gap: 60px;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .job:nth-child(even) {
   flex-direction: row-reverse;
 }
 
-.job span {
-  display: block;
-  color: #2e282a;
+.job-year {
   margin-bottom: 10px;
   background: #c4d8e5;
   border: 2px solid #1c2b48;
   padding: 8px 12px;
   border-radius: 10px;
+}
+
+.job span {
+  display: block;
+  color: #2e282a;
+  width: fit-content;
 }
