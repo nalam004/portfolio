@@ -27,7 +27,7 @@
   flex-direction: row-reverse;
 }
 
-.job:nth-child(even) .job-year span {
+.job:nth-child(odd) .job-year span {
   margin-left: auto;
 }
 
@@ -35,19 +35,22 @@
   flex-basis: 50%;
 }
 
-.job-year {
-  margin-bottom: 10px;
-}
-
 .job-year span {
+  display: block;
   width: fit-content;
   background: #c4d8e5;
   border: 2px solid #1c2b48;
   padding: 8px 12px;
   border-radius: 10px;
+  font-size: 14px;
 }
 
-.job span {
+.company {
   display: block;
+  font-weight: bold;
   color: #2e282a;
+}
+
+.job-year, .company {
+  margin-bottom: 10px;
 }
