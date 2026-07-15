@@ -1,0 +1,21 @@
+{
+  "name": "Niharika Alam | Portfolio",
+  "short_name": "Niharika",
+  "description": "Niharika's developer portfolio showcasing past experience and projects",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#e8ecef",
+  "theme_color": "#c4d8e5",
+  "icons": [
+    {
+      "src": "./assets/app_icon_192.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "./assets/app_icon_512.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
