@@ -1,7 +1,7 @@
 footer .container {
   position: relative;
   background-color: #c4d8e5;
-  background-image: url(.../assets/blue_milk.jpg);
+  background-image: url(../assets/blue_milk.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
