@@ -1,10 +1,6 @@
 footer .container {
   position: relative;
   background-color: #c4d8e5;
-  background-image: url(../assets/blue_milk.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
   padding: 3rem 3rem 1rem;
   border-radius: 30px;
   text-align: center;
