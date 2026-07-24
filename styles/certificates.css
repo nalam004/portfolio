@@ -5,13 +5,13 @@
     border: 2px solid #1c2b48;
 }
 
+#certificates .swiper-slide {
+    width: fit-content;
+}
+
 #certificates .swiper-button-prev,
 #certificates .swiper-button-next {
     width: 22px;
     height: 22px;
     color: #1c2b48;
-}
-
-#certificates .swiper-pagination-bullet-active {
-    background: #1c2b48;
 }

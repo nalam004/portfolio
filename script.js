@@ -62,10 +62,7 @@ const swiper = new Swiper('.swiper', {
   spaceBetween: 20,
   updateOnWindowResize: true,
   slidesPerView: 'auto',
-
-  pagination: {
-    el: '.swiper-pagination',
-  },
+  speed: 600,
 
   navigation: {
     nextEl: '.swiper-button-next',
