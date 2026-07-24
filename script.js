@@ -57,7 +57,7 @@ skills.forEach(skill => {
 
 // Certificate carousel component
 const swiper = new Swiper('.swiper', {
-  direction: 'vertical',
+  direction: 'horizontal',
   loop: true,
 
   pagination: {
