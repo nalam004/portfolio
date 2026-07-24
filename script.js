@@ -59,6 +59,8 @@ skills.forEach(skill => {
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
+  spaceBetween: 20,
+  updateOnWindowResize: true,
 
   pagination: {
     el: '.swiper-pagination',

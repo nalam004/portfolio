@@ -17,8 +17,8 @@ nav {
 }
 
 nav.scrolled {
-  border-color: #2e282a;
-  box-shadow: 4px 4px 0 0 #2e282a;
+  border-color: #1c2b48;
+  box-shadow: 4px 4px 0 0 #1c2b48;
 }
 
 #logo {
@@ -34,7 +34,7 @@ nav.scrolled {
 
 nav .menu-icon {
   display: none;
-  color: #2e282a;
+  color: #1c2b48;
   transition: 0.3s ease-in;
 }
 
@@ -81,7 +81,7 @@ nav .menu-icon {
   }
 
   #nav-links {
-    border: 2px solid #2e282a;
+    border: 2px solid #1c2b48;
     border-radius: 10px;
     padding: 1rem;
     position: absolute;
