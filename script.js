@@ -58,7 +58,6 @@ skills.forEach(skill => {
 // Certificate carousel component
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
-  loop: true,
   spaceBetween: 20,
   updateOnWindowResize: true,
   slidesPerView: 'auto',
