@@ -11,6 +11,7 @@
 
 #certificates img {
     display: block;
-    height: 340px;
+    height: 335px;
     border-radius: 5px;
+    border: 2px solid #1c2b48;
 }
