@@ -45,7 +45,7 @@
   z-index: 1;
 }
 
-.job-year:nth-child(even)::after {
+.job:nth-child(even) .job-year::after {
   rotate: -30deg;
 }
 
