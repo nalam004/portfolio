@@ -39,9 +39,14 @@
   left: calc(50% - 9px);
   width: 20px;
   height: 20px;
-  background: url(../assets/savege.png) no-repeat;
+  background: url(../assets/paws.png) no-repeat;
   background-size: contain;
+  rotate: 30deg;
   z-index: 1;
+}
+
+.job-year:nth-child(even)::after {
+  rotate: -30deg;
 }
 
 .job-year span {
