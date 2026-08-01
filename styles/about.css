@@ -5,8 +5,7 @@
   border-radius: 30px;
 }
 
-#about .container::before,
-#about .container::after {
+#about .container::before {
   content: '';
   position: absolute;
   width: 100px;
@@ -18,13 +17,15 @@
 #about .container::before {
   bottom: 100%;
   left: 65px;
-  background-image: url(../assets/cunicorn.png);
+  background-image: url(../assets/computerkitty.png);
 }
 
-#about .container::after {
+#about .reading-cat {
+  position: absolute;
+  width: 100px;
+  height: 100px;
   bottom: -7px;
   right: 60px;
-  background-image: url(../assets/computerkitty.png);
 }
 
 #about .container p {
@@ -55,7 +56,7 @@ ul.skills-list li img {
   }
 
   #about .container::before,
-  #about .container::after {
+  #about .reading-cat {
     width: 80px;
     height: 80px;
   }
@@ -64,7 +65,7 @@ ul.skills-list li img {
     left: 30px;
   }
 
-  #about .container::after {
+  #about .reading-cat {
     bottom: -6px;
     right: 30px;
   }
