@@ -28,6 +28,10 @@
   right: 60px;
 }
 
+#about .reading-cat:hover +.book-feature {
+  display: flex;
+}
+
 #about .container p {
   margin-bottom: 1rem;
 }
