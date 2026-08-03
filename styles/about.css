@@ -28,8 +28,12 @@
   right: 60px;
 }
 
-#about .reading-cat:hover +.book-feature {
-  opacity: 100%;
+#about .reading-cat:hover +.book-feature .hover-prompt {
+  width: 0%;
+}
+
+#about .reading-cat:hover +.book-feature .book-wrap {
+  width: 100%;
 }
 
 #about .container p:not(.book-name, .author) {

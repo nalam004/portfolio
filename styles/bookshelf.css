@@ -1,7 +1,16 @@
+.hover-prompt {
+    display: block;
+    color: #e8ecef;
+    font-size: 14px;
+}
+
+.book-wrap {
+    width: 0%;
+}
+
 .book-feature {
     display: flex;
     align-items: center;
-    opacity: 0;
     position: absolute;
     right: 60px;
     bottom: 115px;
