@@ -29,11 +29,11 @@
 }
 
 #about .reading-cat:hover +.book-feature .hover-prompt {
-  width: 0%;
+  display: none;
 }
 
 #about .reading-cat:hover +.book-feature .book-wrap {
-  width: 100%;
+  display: flex;
 }
 
 #about .container p:not(.book-name, .author) {
