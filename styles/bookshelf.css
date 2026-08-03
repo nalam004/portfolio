@@ -13,7 +13,7 @@
 .book-feature {
     position: absolute;
     right: 60px;
-    bottom: 115px;
+    bottom: 100px;
     border-radius: 10px;
     padding: 20px;
     width: fit-content;
@@ -60,4 +60,10 @@
     height: 100%;
     display: block;
     border-radius: 5px;
+}
+
+@media (max-width: 875px) {
+    .book-feature {
+        display: none;
+    }
 }

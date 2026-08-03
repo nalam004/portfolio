@@ -20,19 +20,19 @@
   background-image: url(../assets/computerkitty.png);
 }
 
-#about .reading-cat {
+.reading-cat {
   position: absolute;
   width: 100px;
   height: 100px;
-  bottom: -7px;
+  bottom: -16px;
   right: 60px;
 }
 
-#about .reading-cat:hover +.book-feature .hover-prompt {
+.reading-cat:hover +.book-feature .hover-prompt {
   display: none;
 }
 
-#about .reading-cat:hover +.book-feature .book-wrap {
+.reading-cat:hover +.book-feature .book-wrap {
   display: flex;
 }
 
@@ -46,6 +46,7 @@ ul.skills-list {
   gap: 20px;
   color: #1c2b48;
   font-size: 18px;
+  max-width: 800px;
 }
 
 ul.skills-list li {
@@ -64,7 +65,7 @@ ul.skills-list li img {
   }
 
   #about .container::before,
-  #about .reading-cat {
+  .reading-cat {
     width: 80px;
     height: 80px;
   }
@@ -73,8 +74,8 @@ ul.skills-list li img {
     left: 30px;
   }
 
-  #about .reading-cat {
-    bottom: -6px;
+  .reading-cat {
+    bottom: -14px;
     right: 30px;
   }
 }
